@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD4B12D411938C8D00971E7F /* MinThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DB0F22380D001CA560 /* MinThreshold.cpp */; };
+		AD4B12D511938C8D00971E7F /* Translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33FA0F22380E001CA560 /* Translate.cpp */; };
+		AD4B12D711938C8E00971E7F /* Min.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DD0F22380D001CA560 /* Min.cpp */; };
+		AD4B12D811938C8F00971E7F /* Threshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E90F22380E001CA560 /* Threshold.cpp */; };
+		AD4B12D911938C9000971E7F /* Scale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33D40F22380D001CA560 /* Scale.cpp */; };
+		AD4B12DA11938C9000971E7F /* Invert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33D00F22380D001CA560 /* Invert.cpp */; };
+		AD4B12DB11938C9000971E7F /* RadialGradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33F50F22380E001CA560 /* RadialGradient.cpp */; };
+		AD4B12DC11938C9100971E7F /* RealUV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33FD0F22380E001CA560 /* RealUV.cpp */; };
+		AD4B12DD11938C9200971E7F /* GroupShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E20F22380D001CA560 /* GroupShader.cpp */; };
+		AD4B12DE11938C9800971E7F /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD199480118CF9E00016CAD2 /* QtCore.framework */; };
+		AD4B12DF11938C9B00971E7F /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD199481118CF9E00016CAD2 /* QtGui.framework */; };
+		AD4B12E011938C9C00971E7F /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED34040F22380E001CA560 /* Note.cpp */; };
+		AD4B12E111938C9C00971E7F /* UVShifter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33EE0F22380E001CA560 /* UVShifter.cpp */; };
+		AD4B12E411938C9E00971E7F /* ShaderOpsDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33C90F22380D001CA560 /* ShaderOpsDLL.cpp */; };
+		AD4B12E511938C9F00971E7F /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */; };
+		AD4B12E611938CA000971E7F /* Compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E70F22380E001CA560 /* Compress.cpp */; };
+		AD4B12E711938CA100971E7F /* Fresnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33C80F22380D001CA560 /* Fresnel.cpp */; };
+		AD4B12E911938CA200971E7F /* Stretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E40F22380E001CA560 /* Stretch.cpp */; };
+		AD4B12EA11938CA300971E7F /* ProgScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33F10F22380E001CA560 /* ProgScale.cpp */; };
+		AD4B12EB11938CA400971E7F /* MaxThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DC0F22380D001CA560 /* MaxThreshold.cpp */; };
+		AD4B12EC11938CA500971E7F /* Max.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CE0F22380D001CA560 /* Max.cpp */; };
+		AD4B12ED11938CA600971E7F /* Clip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CF0F22380D001CA560 /* Clip.cpp */; };
+		AD4B12EE11938CA600971E7F /* UVTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E00F22380D001CA560 /* UVTile.cpp */; };
+		AD4B12EF11938CA600971E7F /* Brightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CB0F22380D001CA560 /* Brightness.cpp */; };
+		ADD164080F1FE3B4006C76AF /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */; };
+		ADED34070F22380E001CA560 /* Fresnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33C80F22380D001CA560 /* Fresnel.cpp */; };
+		ADED34080F22380E001CA560 /* ShaderOpsDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33C90F22380D001CA560 /* ShaderOpsDLL.cpp */; };
+		ADED34090F22380E001CA560 /* Brightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CB0F22380D001CA560 /* Brightness.cpp */; };
+		ADED340A0F22380E001CA560 /* Max.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CE0F22380D001CA560 /* Max.cpp */; };
+		ADED340B0F22380E001CA560 /* Clip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CF0F22380D001CA560 /* Clip.cpp */; };
+		ADED340C0F22380E001CA560 /* Invert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33D00F22380D001CA560 /* Invert.cpp */; };
+		ADED340D0F22380E001CA560 /* ShaderOps.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED33D20F22380D001CA560 /* ShaderOps.r */; };
+		ADED340E0F22380E001CA560 /* Scale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33D40F22380D001CA560 /* Scale.cpp */; };
+		ADED340F0F22380E001CA560 /* MinThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DB0F22380D001CA560 /* MinThreshold.cpp */; };
+		ADED34100F22380E001CA560 /* MaxThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DC0F22380D001CA560 /* MaxThreshold.cpp */; };
+		ADED34110F22380E001CA560 /* Min.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DD0F22380D001CA560 /* Min.cpp */; };
+		ADED34120F22380E001CA560 /* UVTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E00F22380D001CA560 /* UVTile.cpp */; };
+		ADED34130F22380E001CA560 /* GroupShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E20F22380D001CA560 /* GroupShader.cpp */; };
+		ADED34140F22380E001CA560 /* Stretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E40F22380E001CA560 /* Stretch.cpp */; };
+		ADED34150F22380E001CA560 /* Compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E70F22380E001CA560 /* Compress.cpp */; };
+		ADED34160F22380E001CA560 /* Threshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E90F22380E001CA560 /* Threshold.cpp */; };
+		ADED34170F22380E001CA560 /* UVShifter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33EE0F22380E001CA560 /* UVShifter.cpp */; };
+		ADED34180F22380E001CA560 /* ProgScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33F10F22380E001CA560 /* ProgScale.cpp */; };
+		ADED34190F22380E001CA560 /* RadialGradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33F50F22380E001CA560 /* RadialGradient.cpp */; };
+		ADED341A0F22380E001CA560 /* Translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33FA0F22380E001CA560 /* Translate.cpp */; };
+		ADED341B0F22380E001CA560 /* RealUV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33FD0F22380E001CA560 /* RealUV.cpp */; };
+		ADED341C0F22380E001CA560 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED34040F22380E001CA560 /* Note.cpp */; };
+		ADED34330F22380E001CA560 /* Fresnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33C80F22380D001CA560 /* Fresnel.cpp */; };
+		ADED34340F22380E001CA560 /* ShaderOpsDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33C90F22380D001CA560 /* ShaderOpsDLL.cpp */; };
+		ADED34350F22380E001CA560 /* Brightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CB0F22380D001CA560 /* Brightness.cpp */; };
+		ADED34360F22380E001CA560 /* Max.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CE0F22380D001CA560 /* Max.cpp */; };
+		ADED34370F22380E001CA560 /* Clip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33CF0F22380D001CA560 /* Clip.cpp */; };
+		ADED34380F22380E001CA560 /* Invert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33D00F22380D001CA560 /* Invert.cpp */; };
+		ADED34390F22380E001CA560 /* ShaderOps.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED33D20F22380D001CA560 /* ShaderOps.r */; };
+		ADED343A0F22380E001CA560 /* Scale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33D40F22380D001CA560 /* Scale.cpp */; };
+		ADED343B0F22380E001CA560 /* MinThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DB0F22380D001CA560 /* MinThreshold.cpp */; };
+		ADED343C0F22380E001CA560 /* MaxThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DC0F22380D001CA560 /* MaxThreshold.cpp */; };
+		ADED343D0F22380E001CA560 /* Min.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33DD0F22380D001CA560 /* Min.cpp */; };
+		ADED343E0F22380E001CA560 /* UVTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E00F22380D001CA560 /* UVTile.cpp */; };
+		ADED343F0F22380E001CA560 /* GroupShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E20F22380D001CA560 /* GroupShader.cpp */; };
+		ADED34400F22380E001CA560 /* Stretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E40F22380E001CA560 /* Stretch.cpp */; };
+		ADED34410F22380E001CA560 /* Compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E70F22380E001CA560 /* Compress.cpp */; };
+		ADED34420F22380E001CA560 /* Threshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33E90F22380E001CA560 /* Threshold.cpp */; };
+		ADED34430F22380E001CA560 /* UVShifter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33EE0F22380E001CA560 /* UVShifter.cpp */; };
+		ADED34440F22380E001CA560 /* ProgScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33F10F22380E001CA560 /* ProgScale.cpp */; };
+		ADED34450F22380E001CA560 /* RadialGradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33F50F22380E001CA560 /* RadialGradient.cpp */; };
+		ADED34460F22380E001CA560 /* Translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33FA0F22380E001CA560 /* Translate.cpp */; };
+		ADED34470F22380E001CA560 /* RealUV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED33FD0F22380E001CA560 /* RealUV.cpp */; };
+		ADED34480F22380E001CA560 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED34040F22380E001CA560 /* Note.cpp */; };
+		ADFE21620C877CA600D470F8 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADFE21610C877CA600D470F8 /* COMUtilities.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD199446118CF2850016CAD2 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara8SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		AD199480118CF9E00016CAD2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../Carrara8SDK/Lib/Mac/Frameworks/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		AD199481118CF9E00016CAD2 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../Carrara8SDK/Lib/Mac/Frameworks/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		ADD163FC0F1FE244006C76AF /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara7SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		ADED33C80F22380D001CA560 /* Fresnel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fresnel.cpp; sourceTree = "<group>"; };
+		ADED33C90F22380D001CA560 /* ShaderOpsDLL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderOpsDLL.cpp; sourceTree = "<group>"; };
+		ADED33CA0F22380D001CA560 /* MinDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinDef.h; sourceTree = "<group>"; };
+		ADED33CB0F22380D001CA560 /* Brightness.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Brightness.cpp; sourceTree = "<group>"; };
+		ADED33CC0F22380D001CA560 /* TranslateDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateDef.h; sourceTree = "<group>"; };
+		ADED33CD0F22380D001CA560 /* Translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translate.h; sourceTree = "<group>"; };
+		ADED33CE0F22380D001CA560 /* Max.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Max.cpp; sourceTree = "<group>"; };
+		ADED33CF0F22380D001CA560 /* Clip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clip.cpp; sourceTree = "<group>"; };
+		ADED33D00F22380D001CA560 /* Invert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Invert.cpp; sourceTree = "<group>"; };
+		ADED33D10F22380D001CA560 /* ClipDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipDef.h; sourceTree = "<group>"; };
+		ADED33D20F22380D001CA560 /* ShaderOps.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = ShaderOps.r; sourceTree = "<group>"; };
+		ADED33D30F22380D001CA560 /* Invert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Invert.h; sourceTree = "<group>"; };
+		ADED33D40F22380D001CA560 /* Scale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scale.cpp; sourceTree = "<group>"; };
+		ADED33D50F22380D001CA560 /* RealUVDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealUVDef.h; sourceTree = "<group>"; };
+		ADED33D60F22380D001CA560 /* CompressDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressDef.h; sourceTree = "<group>"; };
+		ADED33D70F22380D001CA560 /* ScaleDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleDef.h; sourceTree = "<group>"; };
+		ADED33D80F22380D001CA560 /* Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scale.h; sourceTree = "<group>"; };
+		ADED33D90F22380D001CA560 /* MIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIn.h; sourceTree = "<group>"; };
+		ADED33DA0F22380D001CA560 /* Max.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Max.h; sourceTree = "<group>"; };
+		ADED33DB0F22380D001CA560 /* MinThreshold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinThreshold.cpp; sourceTree = "<group>"; };
+		ADED33DC0F22380D001CA560 /* MaxThreshold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaxThreshold.cpp; sourceTree = "<group>"; };
+		ADED33DD0F22380D001CA560 /* Min.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Min.cpp; sourceTree = "<group>"; };
+		ADED33DE0F22380D001CA560 /* StretchDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchDef.h; sourceTree = "<group>"; };
+		ADED33DF0F22380D001CA560 /* Stretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stretch.h; sourceTree = "<group>"; };
+		ADED33E00F22380D001CA560 /* UVTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UVTile.cpp; sourceTree = "<group>"; };
+		ADED33E10F22380D001CA560 /* UVShifterDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVShifterDef.h; sourceTree = "<group>"; };
+		ADED33E20F22380D001CA560 /* GroupShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupShader.cpp; sourceTree = "<group>"; };
+		ADED33E30F22380E001CA560 /* GroupShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupShader.h; sourceTree = "<group>"; };
+		ADED33E40F22380E001CA560 /* Stretch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stretch.cpp; sourceTree = "<group>"; };
+		ADED33E50F22380E001CA560 /* ShaderOpsDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderOpsDLL.h; sourceTree = "<group>"; };
+		ADED33E60F22380E001CA560 /* Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compress.h; sourceTree = "<group>"; };
+		ADED33E70F22380E001CA560 /* Compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Compress.cpp; sourceTree = "<group>"; };
+		ADED33E80F22380E001CA560 /* Threshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Threshold.h; sourceTree = "<group>"; };
+		ADED33E90F22380E001CA560 /* Threshold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Threshold.cpp; sourceTree = "<group>"; };
+		ADED33EA0F22380E001CA560 /* UVTileDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTileDef.h; sourceTree = "<group>"; };
+		ADED33EB0F22380E001CA560 /* UVTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTile.h; sourceTree = "<group>"; };
+		ADED33EC0F22380E001CA560 /* FresnelDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FresnelDef.h; sourceTree = "<group>"; };
+		ADED33ED0F22380E001CA560 /* UVShifter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVShifter.h; sourceTree = "<group>"; };
+		ADED33EE0F22380E001CA560 /* UVShifter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UVShifter.cpp; sourceTree = "<group>"; };
+		ADED33EF0F22380E001CA560 /* Brightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brightness.h; sourceTree = "<group>"; };
+		ADED33F00F22380E001CA560 /* InvertDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvertDef.h; sourceTree = "<group>"; };
+		ADED33F10F22380E001CA560 /* ProgScale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgScale.cpp; sourceTree = "<group>"; };
+		ADED33F20F22380E001CA560 /* NoteDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDef.h; sourceTree = "<group>"; };
+		ADED33F30F22380E001CA560 /* MaxThreshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxThreshold.h; sourceTree = "<group>"; };
+		ADED33F40F22380E001CA560 /* GroupShaderDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupShaderDef.h; sourceTree = "<group>"; };
+		ADED33F50F22380E001CA560 /* RadialGradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RadialGradient.cpp; sourceTree = "<group>"; };
+		ADED33F60F22380E001CA560 /* Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clip.h; sourceTree = "<group>"; };
+		ADED33F70F22380E001CA560 /* BrightnessDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessDef.h; sourceTree = "<group>"; };
+		ADED33F80F22380E001CA560 /* MaxThresholdDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxThresholdDef.h; sourceTree = "<group>"; };
+		ADED33F90F22380E001CA560 /* MaxDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxDef.h; sourceTree = "<group>"; };
+		ADED33FA0F22380E001CA560 /* Translate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Translate.cpp; sourceTree = "<group>"; };
+		ADED33FB0F22380E001CA560 /* ThresholdDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThresholdDef.h; sourceTree = "<group>"; };
+		ADED33FC0F22380E001CA560 /* RealUV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealUV.h; sourceTree = "<group>"; };
+		ADED33FD0F22380E001CA560 /* RealUV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RealUV.cpp; sourceTree = "<group>"; };
+		ADED33FE0F22380E001CA560 /* MinThresholdDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinThresholdDef.h; sourceTree = "<group>"; };
+		ADED33FF0F22380E001CA560 /* MInThreshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInThreshold.h; sourceTree = "<group>"; };
+		ADED34000F22380E001CA560 /* ProgScaleDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgScaleDef.h; sourceTree = "<group>"; };
+		ADED34010F22380E001CA560 /* ProgScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgScale.h; sourceTree = "<group>"; };
+		ADED34020F22380E001CA560 /* Fresnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fresnel.h; sourceTree = "<group>"; };
+		ADED34030F22380E001CA560 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		ADED34040F22380E001CA560 /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
+		ADED34050F22380E001CA560 /* RadialGradientDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialGradientDef.h; sourceTree = "<group>"; };
+		ADED34060F22380E001CA560 /* RadialGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialGradient.h; sourceTree = "<group>"; };
+		ADFE215B0C877C5000D470F8 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE21610C877CA600D470F8 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara6SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD19943F118CF2850016CAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4B12DE11938C9800971E7F /* QtCore.framework in Frameworks */,
+				AD4B12DF11938C9B00971E7F /* QtGui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163F50F1FE244006C76AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21540C877C5000D470F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CE14C70A8978E00055D091 = {
+			isa = PBXGroup;
+			children = (
+				AD06671B0C87888000179EB6 /* Common */,
+				ADFE21600C877C8D00D470F8 /* C6 SDK */,
+				ADD164050F1FE385006C76AF /* C7 SDK */,
+				AD199431118CF2640016CAD2 /* C8 SDK */,
+				AD199480118CF9E00016CAD2 /* QtCore.framework */,
+				AD199481118CF9E00016CAD2 /* QtGui.framework */,
+				ADED33C80F22380D001CA560 /* Fresnel.cpp */,
+				ADED33C90F22380D001CA560 /* ShaderOpsDLL.cpp */,
+				ADED33CA0F22380D001CA560 /* MinDef.h */,
+				ADED33CB0F22380D001CA560 /* Brightness.cpp */,
+				ADED33CC0F22380D001CA560 /* TranslateDef.h */,
+				ADED33CD0F22380D001CA560 /* Translate.h */,
+				ADED33CE0F22380D001CA560 /* Max.cpp */,
+				ADED33CF0F22380D001CA560 /* Clip.cpp */,
+				ADED33D00F22380D001CA560 /* Invert.cpp */,
+				ADED33D10F22380D001CA560 /* ClipDef.h */,
+				ADED33D20F22380D001CA560 /* ShaderOps.r */,
+				ADED33D30F22380D001CA560 /* Invert.h */,
+				ADED33D40F22380D001CA560 /* Scale.cpp */,
+				ADED33D50F22380D001CA560 /* RealUVDef.h */,
+				ADED33D60F22380D001CA560 /* CompressDef.h */,
+				ADED33D70F22380D001CA560 /* ScaleDef.h */,
+				ADED33D80F22380D001CA560 /* Scale.h */,
+				ADED33D90F22380D001CA560 /* MIn.h */,
+				ADED33DA0F22380D001CA560 /* Max.h */,
+				ADED33DB0F22380D001CA560 /* MinThreshold.cpp */,
+				ADED33DC0F22380D001CA560 /* MaxThreshold.cpp */,
+				ADED33DD0F22380D001CA560 /* Min.cpp */,
+				ADED33DE0F22380D001CA560 /* StretchDef.h */,
+				ADED33DF0F22380D001CA560 /* Stretch.h */,
+				ADED33E00F22380D001CA560 /* UVTile.cpp */,
+				ADED33E10F22380D001CA560 /* UVShifterDef.h */,
+				ADED33E20F22380D001CA560 /* GroupShader.cpp */,
+				ADED33E30F22380E001CA560 /* GroupShader.h */,
+				ADED33E40F22380E001CA560 /* Stretch.cpp */,
+				ADED33E50F22380E001CA560 /* ShaderOpsDLL.h */,
+				ADED33E60F22380E001CA560 /* Compress.h */,
+				ADED33E70F22380E001CA560 /* Compress.cpp */,
+				ADED33E80F22380E001CA560 /* Threshold.h */,
+				ADED33E90F22380E001CA560 /* Threshold.cpp */,
+				ADED33EA0F22380E001CA560 /* UVTileDef.h */,
+				ADED33EB0F22380E001CA560 /* UVTile.h */,
+				ADED33EC0F22380E001CA560 /* FresnelDef.h */,
+				ADED33ED0F22380E001CA560 /* UVShifter.h */,
+				ADED33EE0F22380E001CA560 /* UVShifter.cpp */,
+				ADED33EF0F22380E001CA560 /* Brightness.h */,
+				ADED33F00F22380E001CA560 /* InvertDef.h */,
+				ADED33F10F22380E001CA560 /* ProgScale.cpp */,
+				ADED33F20F22380E001CA560 /* NoteDef.h */,
+				ADED33F30F22380E001CA560 /* MaxThreshold.h */,
+				ADED33F40F22380E001CA560 /* GroupShaderDef.h */,
+				ADED33F50F22380E001CA560 /* RadialGradient.cpp */,
+				ADED33F60F22380E001CA560 /* Clip.h */,
+				ADED33F70F22380E001CA560 /* BrightnessDef.h */,
+				ADED33F80F22380E001CA560 /* MaxThresholdDef.h */,
+				ADED33F90F22380E001CA560 /* MaxDef.h */,
+				ADED33FA0F22380E001CA560 /* Translate.cpp */,
+				ADED33FB0F22380E001CA560 /* ThresholdDef.h */,
+				ADED33FC0F22380E001CA560 /* RealUV.h */,
+				ADED33FD0F22380E001CA560 /* RealUV.cpp */,
+				ADED33FE0F22380E001CA560 /* MinThresholdDef.h */,
+				ADED33FF0F22380E001CA560 /* MInThreshold.h */,
+				ADED34000F22380E001CA560 /* ProgScaleDef.h */,
+				ADED34010F22380E001CA560 /* ProgScale.h */,
+				ADED34020F22380E001CA560 /* Fresnel.h */,
+				ADED34030F22380E001CA560 /* Note.h */,
+				ADED34040F22380E001CA560 /* Note.cpp */,
+				ADED34050F22380E001CA560 /* RadialGradientDef.h */,
+				ADED34060F22380E001CA560 /* RadialGradient.h */,
+				95CE14DA0A8979340055D091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE14DA0A8979340055D091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE215B0C877C5000D470F8 /* Myextension.mcx */,
+				ADD163FC0F1FE244006C76AF /* Myextension.mcx */,
+				AD199446118CF2850016CAD2 /* Myextension.mcx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD06671B0C87888000179EB6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AD199431118CF2640016CAD2 /* C8 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */,
+			);
+			name = "C8 SDK";
+			sourceTree = "<group>";
+		};
+		ADD164050F1FE385006C76AF /* C7 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */,
+			);
+			name = "C7 SDK";
+			sourceTree = "<group>";
+		};
+		ADFE21600C877C8D00D470F8 /* C6 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE21610C877CA600D470F8 /* COMUtilities.cpp */,
+			);
+			name = "C6 SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD199432118CF2850016CAD2 /* C8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD199443118CF2850016CAD2 /* Build configuration list for PBXNativeTarget "C8" */;
+			buildPhases = (
+				AD199433118CF2850016CAD2 /* Sources */,
+				AD19943F118CF2850016CAD2 /* Frameworks */,
+				AD199440118CF2850016CAD2 /* Rez */,
+				AD199442118CF2850016CAD2 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C8;
+			productName = Myextension;
+			productReference = AD199446118CF2850016CAD2 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADD163E80F1FE244006C76AF /* C7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD163F90F1FE244006C76AF /* Build configuration list for PBXNativeTarget "C7" */;
+			buildPhases = (
+				ADD163E90F1FE244006C76AF /* Sources */,
+				ADD163F50F1FE244006C76AF /* Frameworks */,
+				ADD163F60F1FE244006C76AF /* Rez */,
+				ADD163F80F1FE244006C76AF /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C7;
+			productName = Myextension;
+			productReference = ADD163FC0F1FE244006C76AF /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADFE21480C877C5000D470F8 /* C6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFE21580C877C5000D470F8 /* Build configuration list for PBXNativeTarget "C6" */;
+			buildPhases = (
+				ADFE21490C877C5000D470F8 /* Sources */,
+				ADFE21540C877C5000D470F8 /* Frameworks */,
+				ADFE21550C877C5000D470F8 /* Rez */,
+				ADFE21570C877C5000D470F8 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C6;
+			productName = Myextension;
+			productReference = ADFE215B0C877C5000D470F8 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE14C90A8978E00055D091 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 95CE14C70A8978E00055D091;
+			productRefGroup = 95CE14DA0A8979340055D091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFE21480C877C5000D470F8 /* C6 */,
+				ADD163E80F1FE244006C76AF /* C7 */,
+				AD199432118CF2850016CAD2 /* C8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		AD199440118CF2850016CAD2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED34390F22380E001CA560 /* ShaderOps.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163F60F1FE244006C76AF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED34390F22380E001CA560 /* ShaderOps.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21550C877C5000D470F8 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED340D0F22380E001CA560 /* ShaderOps.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD199442118CF2850016CAD2 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+		ADD163F80F1FE244006C76AF /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+		ADFE21570C877C5000D470F8 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD199433118CF2850016CAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4B12D411938C8D00971E7F /* MinThreshold.cpp in Sources */,
+				AD4B12D511938C8D00971E7F /* Translate.cpp in Sources */,
+				AD4B12D711938C8E00971E7F /* Min.cpp in Sources */,
+				AD4B12D811938C8F00971E7F /* Threshold.cpp in Sources */,
+				AD4B12D911938C9000971E7F /* Scale.cpp in Sources */,
+				AD4B12DA11938C9000971E7F /* Invert.cpp in Sources */,
+				AD4B12DB11938C9000971E7F /* RadialGradient.cpp in Sources */,
+				AD4B12DC11938C9100971E7F /* RealUV.cpp in Sources */,
+				AD4B12DD11938C9200971E7F /* GroupShader.cpp in Sources */,
+				AD4B12E011938C9C00971E7F /* Note.cpp in Sources */,
+				AD4B12E111938C9C00971E7F /* UVShifter.cpp in Sources */,
+				AD4B12E411938C9E00971E7F /* ShaderOpsDLL.cpp in Sources */,
+				AD4B12E511938C9F00971E7F /* COMUtilities.cpp in Sources */,
+				AD4B12E611938CA000971E7F /* Compress.cpp in Sources */,
+				AD4B12E711938CA100971E7F /* Fresnel.cpp in Sources */,
+				AD4B12E911938CA200971E7F /* Stretch.cpp in Sources */,
+				AD4B12EA11938CA300971E7F /* ProgScale.cpp in Sources */,
+				AD4B12EB11938CA400971E7F /* MaxThreshold.cpp in Sources */,
+				AD4B12EC11938CA500971E7F /* Max.cpp in Sources */,
+				AD4B12ED11938CA600971E7F /* Clip.cpp in Sources */,
+				AD4B12EE11938CA600971E7F /* UVTile.cpp in Sources */,
+				AD4B12EF11938CA600971E7F /* Brightness.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163E90F1FE244006C76AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD164080F1FE3B4006C76AF /* COMUtilities.cpp in Sources */,
+				ADED34330F22380E001CA560 /* Fresnel.cpp in Sources */,
+				ADED34340F22380E001CA560 /* ShaderOpsDLL.cpp in Sources */,
+				ADED34350F22380E001CA560 /* Brightness.cpp in Sources */,
+				ADED34360F22380E001CA560 /* Max.cpp in Sources */,
+				ADED34370F22380E001CA560 /* Clip.cpp in Sources */,
+				ADED34380F22380E001CA560 /* Invert.cpp in Sources */,
+				ADED343A0F22380E001CA560 /* Scale.cpp in Sources */,
+				ADED343B0F22380E001CA560 /* MinThreshold.cpp in Sources */,
+				ADED343C0F22380E001CA560 /* MaxThreshold.cpp in Sources */,
+				ADED343D0F22380E001CA560 /* Min.cpp in Sources */,
+				ADED343E0F22380E001CA560 /* UVTile.cpp in Sources */,
+				ADED343F0F22380E001CA560 /* GroupShader.cpp in Sources */,
+				ADED34400F22380E001CA560 /* Stretch.cpp in Sources */,
+				ADED34410F22380E001CA560 /* Compress.cpp in Sources */,
+				ADED34420F22380E001CA560 /* Threshold.cpp in Sources */,
+				ADED34430F22380E001CA560 /* UVShifter.cpp in Sources */,
+				ADED34440F22380E001CA560 /* ProgScale.cpp in Sources */,
+				ADED34450F22380E001CA560 /* RadialGradient.cpp in Sources */,
+				ADED34460F22380E001CA560 /* Translate.cpp in Sources */,
+				ADED34470F22380E001CA560 /* RealUV.cpp in Sources */,
+				ADED34480F22380E001CA560 /* Note.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21490C877C5000D470F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE21620C877CA600D470F8 /* COMUtilities.cpp in Sources */,
+				ADED34070F22380E001CA560 /* Fresnel.cpp in Sources */,
+				ADED34080F22380E001CA560 /* ShaderOpsDLL.cpp in Sources */,
+				ADED34090F22380E001CA560 /* Brightness.cpp in Sources */,
+				ADED340A0F22380E001CA560 /* Max.cpp in Sources */,
+				ADED340B0F22380E001CA560 /* Clip.cpp in Sources */,
+				ADED340C0F22380E001CA560 /* Invert.cpp in Sources */,
+				ADED340E0F22380E001CA560 /* Scale.cpp in Sources */,
+				ADED340F0F22380E001CA560 /* MinThreshold.cpp in Sources */,
+				ADED34100F22380E001CA560 /* MaxThreshold.cpp in Sources */,
+				ADED34110F22380E001CA560 /* Min.cpp in Sources */,
+				ADED34120F22380E001CA560 /* UVTile.cpp in Sources */,
+				ADED34130F22380E001CA560 /* GroupShader.cpp in Sources */,
+				ADED34140F22380E001CA560 /* Stretch.cpp in Sources */,
+				ADED34150F22380E001CA560 /* Compress.cpp in Sources */,
+				ADED34160F22380E001CA560 /* Threshold.cpp in Sources */,
+				ADED34170F22380E001CA560 /* UVShifter.cpp in Sources */,
+				ADED34180F22380E001CA560 /* ProgScale.cpp in Sources */,
+				ADED34190F22380E001CA560 /* RadialGradient.cpp in Sources */,
+				ADED341A0F22380E001CA560 /* Translate.cpp in Sources */,
+				ADED341B0F22380E001CA560 /* RealUV.cpp in Sources */,
+				ADED341C0F22380E001CA560 /* Note.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95CE14CB0A8978E00055D091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATH = $CARRAPATHPRO;
+				CARRAPATHDEBUG = /cvs/Charles/exec/Debug/Carrara.app;
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-fexceptions";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug;
+		};
+		95CE14CC0A8978E00055D091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CARRAPATH = $CARRAPATHPRO;
+				CARRAPATHDEBUG = /cvs/Charles/exec/Debug/Carrara.app;
+				CARRAPATHPRO = /Applications/Carrara5Pro/CarraraPro.app;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-fexceptions";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release;
+		};
+		AD199444118CF2850016CAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara8;
+				CARRARAPATHSDK = ../../Carrara8SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GCC_VERSION = 4.2;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/PPC/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/i386/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/x86_64/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/PPC/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/i386/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/x86_64/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		AD199445118CF2850016CAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara8;
+				CARRARAPATHSDK = ../../Carrara8SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.2;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/PPC/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/i386/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/x86_64/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/PPC/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/i386/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/x86_64/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ADD163FA0F1FE244006C76AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara7;
+				CARRARAPATHSDK = ../../Carrara7SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ADD163FB0F1FE244006C76AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara7;
+				CARRARAPATHSDK = ../../Carrara7SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ADFE21590C877C5000D470F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				CARRARAPATHSDK = ../../Carrara6SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ADFE215A0C877C5000D470F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				CARRARAPATHSDK = ../../Carrara6SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14CB0A8978E00055D091 /* Debug */,
+				95CE14CC0A8978E00055D091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD199443118CF2850016CAD2 /* Build configuration list for PBXNativeTarget "C8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD199444118CF2850016CAD2 /* Debug */,
+				AD199445118CF2850016CAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD163F90F1FE244006C76AF /* Build configuration list for PBXNativeTarget "C7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD163FA0F1FE244006C76AF /* Debug */,
+				ADD163FB0F1FE244006C76AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFE21580C877C5000D470F8 /* Build configuration list for PBXNativeTarget "C6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE21590C877C5000D470F8 /* Debug */,
+				ADFE215A0C877C5000D470F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE14C90A8978E00055D091 /* Project object */;
+}
