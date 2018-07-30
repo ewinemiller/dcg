@@ -1,0 +1,8 @@
+LIBRARY   Noir
+EXPORTS
+			 MCDllInit
+			 MCDllGetClassObject
+			 MCDllCanUnloadNow
+			 MCDllCleanUp
+			 MCDllInitExceptionTranslator
+			 MCDllCleanUpExceptionTranslator

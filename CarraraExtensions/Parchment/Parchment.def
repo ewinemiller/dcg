@@ -1,0 +1,8 @@
+LIBRARY   Parchment
+EXPORTS
+			 MCDllInit
+			 MCDllGetClassObject
+			 MCDllCanUnloadNow
+			 MCDllCleanUp
+			 MCDllInitExceptionTranslator
+			 MCDllCleanUpExceptionTranslator

@@ -1,0 +1,8 @@
+LIBRARY   GroundControl
+EXPORTS
+			 MCDllInit
+			 MCDllGetClassObject
+			 MCDllCanUnloadNow
+			 MCDllCleanUp
+			 MCDllInitExceptionTranslator
+			 MCDllCleanUpExceptionTranslator
