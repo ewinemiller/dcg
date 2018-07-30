@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD36A185119390740015DBD1 /* ToonOverrideCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35D20F223E38001CA560 /* ToonOverrideCache.cpp */; };
+		AD36A187119390750015DBD1 /* cOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36330F223EEF001CA560 /* cOctTree.cpp */; };
+		AD36A188119390750015DBD1 /* IEdgeTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36190F223EBB001CA560 /* IEdgeTree.cpp */; };
+		AD36A189119390760015DBD1 /* cMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362B0F223EEF001CA560 /* cMeshBucket.cpp */; };
+		AD36A18A119390760015DBD1 /* cEdgeLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED361C0F223EBB001CA560 /* cEdgeLongSideTree.cpp */; };
+		AD36A18B119390770015DBD1 /* cEdgeOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36180F223EBB001CA560 /* cEdgeOctTree.cpp */; };
+		AD36A18E119390780015DBD1 /* cLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362C0F223EEF001CA560 /* cLongSideTree.cpp */; };
+		AD36A18F119390790015DBD1 /* WireRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35DC0F223E38001CA560 /* WireRenderer.cpp */; };
+		AD36A1901193907A0015DBD1 /* DCGSceneUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362E0F223EEF001CA560 /* DCGSceneUtil.cpp */; };
+		AD36A1921193907B0015DBD1 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */; };
+		AD36A1931193907C0015DBD1 /* ToonEnabled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35DB0F223E38001CA560 /* ToonEnabled.cpp */; };
+		AD36A1941193907C0015DBD1 /* cEdgeMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36170F223EBB001CA560 /* cEdgeMeshBucket.cpp */; };
+		AD36A1951193907D0015DBD1 /* IMeshTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED364B0F223F26001CA560 /* IMeshTree.cpp */; };
+		AD36A1961193907E0015DBD1 /* WireframeFacetMeshAccumulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36030F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp */; };
+		AD36A1971193907E0015DBD1 /* dcguiutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36500F223F33001CA560 /* dcguiutil.cpp */; };
+		AD36A1981193907F0015DBD1 /* Wireframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35E90F223E45001CA560 /* Wireframe.cpp */; };
+		AD36A199119390800015DBD1 /* dcgmeshutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36300F223EEF001CA560 /* dcgmeshutil.cpp */; };
+		AD36A19B119390810015DBD1 /* WireframeProDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35EB0F223E45001CA560 /* WireframeProDLL.cpp */; };
+		AD36A19C119390810015DBD1 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD199480118CF9E00016CAD2 /* QtCore.framework */; };
+		AD36A19D119390820015DBD1 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD199481118CF9E00016CAD2 /* QtGui.framework */; };
+		ADD164080F1FE3B4006C76AF /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */; };
+		ADED35DD0F223E38001CA560 /* ToonOverrideCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35D20F223E38001CA560 /* ToonOverrideCache.cpp */; };
+		ADED35DF0F223E38001CA560 /* ToonEnabled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35DB0F223E38001CA560 /* ToonEnabled.cpp */; };
+		ADED35E00F223E38001CA560 /* WireRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35DC0F223E38001CA560 /* WireRenderer.cpp */; };
+		ADED35E50F223E38001CA560 /* ToonOverrideCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35D20F223E38001CA560 /* ToonOverrideCache.cpp */; };
+		ADED35E70F223E38001CA560 /* ToonEnabled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35DB0F223E38001CA560 /* ToonEnabled.cpp */; };
+		ADED35E80F223E38001CA560 /* WireRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35DC0F223E38001CA560 /* WireRenderer.cpp */; };
+		ADED35EF0F223E45001CA560 /* Wireframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35E90F223E45001CA560 /* Wireframe.cpp */; };
+		ADED35F00F223E45001CA560 /* WireframeProDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35EB0F223E45001CA560 /* WireframeProDLL.cpp */; };
+		ADED35F10F223E45001CA560 /* WireframePro.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED35EC0F223E45001CA560 /* WireframePro.r */; };
+		ADED35F40F223E45001CA560 /* WireframePro.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED35EC0F223E45001CA560 /* WireframePro.r */; };
+		ADED35F50F223E45001CA560 /* Wireframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35E90F223E45001CA560 /* Wireframe.cpp */; };
+		ADED35F60F223E45001CA560 /* WireframeProDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35EB0F223E45001CA560 /* WireframeProDLL.cpp */; };
+		ADED35F70F223E45001CA560 /* WireframePro.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED35EC0F223E45001CA560 /* WireframePro.r */; };
+		ADED360A0F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36030F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp */; };
+		ADED36140F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36030F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp */; };
+		ADED361E0F223EBB001CA560 /* cEdgeMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36170F223EBB001CA560 /* cEdgeMeshBucket.cpp */; };
+		ADED361F0F223EBB001CA560 /* cEdgeOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36180F223EBB001CA560 /* cEdgeOctTree.cpp */; };
+		ADED36200F223EBB001CA560 /* IEdgeTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36190F223EBB001CA560 /* IEdgeTree.cpp */; };
+		ADED36210F223EBB001CA560 /* cEdgeLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED361C0F223EBB001CA560 /* cEdgeLongSideTree.cpp */; };
+		ADED36260F223EBB001CA560 /* cEdgeMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36170F223EBB001CA560 /* cEdgeMeshBucket.cpp */; };
+		ADED36270F223EBB001CA560 /* cEdgeOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36180F223EBB001CA560 /* cEdgeOctTree.cpp */; };
+		ADED36280F223EBB001CA560 /* IEdgeTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36190F223EBB001CA560 /* IEdgeTree.cpp */; };
+		ADED36290F223EBB001CA560 /* cEdgeLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED361C0F223EBB001CA560 /* cEdgeLongSideTree.cpp */; };
+		ADED36370F223EEF001CA560 /* cMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362B0F223EEF001CA560 /* cMeshBucket.cpp */; };
+		ADED36380F223EEF001CA560 /* cLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362C0F223EEF001CA560 /* cLongSideTree.cpp */; };
+		ADED36390F223EEF001CA560 /* DCGSceneUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362E0F223EEF001CA560 /* DCGSceneUtil.cpp */; };
+		ADED363A0F223EEF001CA560 /* dcgmeshutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36300F223EEF001CA560 /* dcgmeshutil.cpp */; };
+		ADED363C0F223EEF001CA560 /* cOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36330F223EEF001CA560 /* cOctTree.cpp */; };
+		ADED36430F223EEF001CA560 /* cMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362B0F223EEF001CA560 /* cMeshBucket.cpp */; };
+		ADED36440F223EEF001CA560 /* cLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362C0F223EEF001CA560 /* cLongSideTree.cpp */; };
+		ADED36450F223EEF001CA560 /* DCGSceneUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED362E0F223EEF001CA560 /* DCGSceneUtil.cpp */; };
+		ADED36460F223EEF001CA560 /* dcgmeshutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36300F223EEF001CA560 /* dcgmeshutil.cpp */; };
+		ADED36480F223EEF001CA560 /* cOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36330F223EEF001CA560 /* cOctTree.cpp */; };
+		ADED364C0F223F26001CA560 /* IMeshTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED364B0F223F26001CA560 /* IMeshTree.cpp */; };
+		ADED364E0F223F26001CA560 /* IMeshTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED364B0F223F26001CA560 /* IMeshTree.cpp */; };
+		ADED36510F223F33001CA560 /* dcguiutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36500F223F33001CA560 /* dcguiutil.cpp */; };
+		ADED36530F223F33001CA560 /* dcguiutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED36500F223F33001CA560 /* dcguiutil.cpp */; };
+		ADFE21620C877CA600D470F8 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADFE21610C877CA600D470F8 /* COMUtilities.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD199446118CF2850016CAD2 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara8SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		AD199480118CF9E00016CAD2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../Carrara8SDK/Lib/Mac/Frameworks/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		AD199481118CF9E00016CAD2 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../Carrara8SDK/Lib/Mac/Frameworks/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		ADD163FC0F1FE244006C76AF /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara7SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35D00F223E38001CA560 /* ToonSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToonSettings.h; path = ../WirerendererCommon/ToonSettings.h; sourceTree = SOURCE_ROOT; };
+		ADED35D10F223E38001CA560 /* WireRendererDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WireRendererDef.h; path = ../WirerendererCommon/WireRendererDef.h; sourceTree = SOURCE_ROOT; };
+		ADED35D20F223E38001CA560 /* ToonOverrideCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ToonOverrideCache.cpp; path = ../WirerendererCommon/ToonOverrideCache.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35D30F223E38001CA560 /* ToonOverrideCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToonOverrideCache.h; path = ../WirerendererCommon/ToonOverrideCache.h; sourceTree = SOURCE_ROOT; };
+		ADED35D50F223E38001CA560 /* WireRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WireRenderer.h; path = ../WirerendererCommon/WireRenderer.h; sourceTree = SOURCE_ROOT; };
+		ADED35D60F223E38001CA560 /* WireRendererData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WireRendererData.h; path = ../WirerendererCommon/WireRendererData.h; sourceTree = SOURCE_ROOT; };
+		ADED35D90F223E38001CA560 /* ToonEnabledDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToonEnabledDef.h; path = ../WirerendererCommon/ToonEnabledDef.h; sourceTree = SOURCE_ROOT; };
+		ADED35DA0F223E38001CA560 /* ToonEnabled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToonEnabled.h; path = ../WirerendererCommon/ToonEnabled.h; sourceTree = SOURCE_ROOT; };
+		ADED35DB0F223E38001CA560 /* ToonEnabled.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ToonEnabled.cpp; path = ../WirerendererCommon/ToonEnabled.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35DC0F223E38001CA560 /* WireRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WireRenderer.cpp; path = ../WirerendererCommon/WireRenderer.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35E90F223E45001CA560 /* Wireframe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wireframe.cpp; sourceTree = "<group>"; };
+		ADED35EA0F223E45001CA560 /* Wireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wireframe.h; sourceTree = "<group>"; };
+		ADED35EB0F223E45001CA560 /* WireframeProDLL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WireframeProDLL.cpp; sourceTree = "<group>"; };
+		ADED35EC0F223E45001CA560 /* WireframePro.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = WireframePro.r; sourceTree = "<group>"; };
+		ADED35ED0F223E45001CA560 /* WireframeProDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireframeProDLL.h; sourceTree = "<group>"; };
+		ADED35EE0F223E45001CA560 /* WireframeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireframeDef.h; sourceTree = "<group>"; };
+		ADED35FE0F223E8B001CA560 /* WireframeFacetMeshAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WireframeFacetMeshAccumulator.h; path = ../Common/WireframeFacetMeshAccumulator.h; sourceTree = SOURCE_ROOT; };
+		ADED36030F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WireframeFacetMeshAccumulator.cpp; path = ../Common/WireframeFacetMeshAccumulator.cpp; sourceTree = SOURCE_ROOT; };
+		ADED36160F223EBB001CA560 /* cEdgeMeshBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cEdgeMeshBucket.h; path = ../Common/cEdgeMeshBucket.h; sourceTree = SOURCE_ROOT; };
+		ADED36170F223EBB001CA560 /* cEdgeMeshBucket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cEdgeMeshBucket.cpp; path = ../Common/cEdgeMeshBucket.cpp; sourceTree = SOURCE_ROOT; };
+		ADED36180F223EBB001CA560 /* cEdgeOctTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cEdgeOctTree.cpp; path = ../Common/cEdgeOctTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED36190F223EBB001CA560 /* IEdgeTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IEdgeTree.cpp; path = ../Common/IEdgeTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED361A0F223EBB001CA560 /* cEdgeLongSideTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cEdgeLongSideTree.h; path = ../Common/cEdgeLongSideTree.h; sourceTree = SOURCE_ROOT; };
+		ADED361B0F223EBB001CA560 /* IEdgeTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEdgeTree.h; path = ../Common/IEdgeTree.h; sourceTree = SOURCE_ROOT; };
+		ADED361C0F223EBB001CA560 /* cEdgeLongSideTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cEdgeLongSideTree.cpp; path = ../Common/cEdgeLongSideTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED361D0F223EBB001CA560 /* cEdgeOctTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cEdgeOctTree.h; path = ../Common/cEdgeOctTree.h; sourceTree = SOURCE_ROOT; };
+		ADED362B0F223EEF001CA560 /* cMeshBucket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cMeshBucket.cpp; path = ../Common/cMeshBucket.cpp; sourceTree = SOURCE_ROOT; };
+		ADED362C0F223EEF001CA560 /* cLongSideTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cLongSideTree.cpp; path = ../Common/cLongSideTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED362D0F223EEF001CA560 /* dcguiutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dcguiutil.h; path = ../Common/dcguiutil.h; sourceTree = SOURCE_ROOT; };
+		ADED362E0F223EEF001CA560 /* DCGSceneUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCGSceneUtil.cpp; path = ../Common/DCGSceneUtil.cpp; sourceTree = SOURCE_ROOT; };
+		ADED362F0F223EEF001CA560 /* IMeshTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMeshTree.h; path = ../Common/IMeshTree.h; sourceTree = SOURCE_ROOT; };
+		ADED36300F223EEF001CA560 /* dcgmeshutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dcgmeshutil.cpp; path = ../Common/dcgmeshutil.cpp; sourceTree = SOURCE_ROOT; };
+		ADED36320F223EEF001CA560 /* dcgmeshutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dcgmeshutil.h; path = ../Common/dcgmeshutil.h; sourceTree = SOURCE_ROOT; };
+		ADED36330F223EEF001CA560 /* cOctTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cOctTree.cpp; path = ../Common/cOctTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED36340F223EEF001CA560 /* cOctTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cOctTree.h; path = ../Common/cOctTree.h; sourceTree = SOURCE_ROOT; };
+		ADED36350F223EEF001CA560 /* cMeshBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cMeshBucket.h; path = ../Common/cMeshBucket.h; sourceTree = SOURCE_ROOT; };
+		ADED36360F223EEF001CA560 /* cLongSideTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cLongSideTree.h; path = ../Common/cLongSideTree.h; sourceTree = SOURCE_ROOT; };
+		ADED364B0F223F26001CA560 /* IMeshTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IMeshTree.cpp; path = ../Common/IMeshTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED36500F223F33001CA560 /* dcguiutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dcguiutil.cpp; path = ../Common/dcguiutil.cpp; sourceTree = SOURCE_ROOT; };
+		ADFE215B0C877C5000D470F8 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE21610C877CA600D470F8 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara6SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD19943F118CF2850016CAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD36A19C119390810015DBD1 /* QtCore.framework in Frameworks */,
+				AD36A19D119390820015DBD1 /* QtGui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163F50F1FE244006C76AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21540C877C5000D470F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CE14C70A8978E00055D091 = {
+			isa = PBXGroup;
+			children = (
+				AD06671B0C87888000179EB6 /* Common */,
+				ADFE21600C877C8D00D470F8 /* C6 SDK */,
+				ADD164050F1FE385006C76AF /* C7 SDK */,
+				AD199431118CF2640016CAD2 /* C8 SDK */,
+				AD199480118CF9E00016CAD2 /* QtCore.framework */,
+				AD199481118CF9E00016CAD2 /* QtGui.framework */,
+				ADED35E90F223E45001CA560 /* Wireframe.cpp */,
+				ADED35EA0F223E45001CA560 /* Wireframe.h */,
+				ADED35EB0F223E45001CA560 /* WireframeProDLL.cpp */,
+				ADED35EC0F223E45001CA560 /* WireframePro.r */,
+				ADED35ED0F223E45001CA560 /* WireframeProDLL.h */,
+				ADED35EE0F223E45001CA560 /* WireframeDef.h */,
+				95CE14DA0A8979340055D091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE14DA0A8979340055D091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE215B0C877C5000D470F8 /* Myextension.mcx */,
+				ADD163FC0F1FE244006C76AF /* Myextension.mcx */,
+				AD199446118CF2850016CAD2 /* Myextension.mcx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD06671B0C87888000179EB6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ADED36500F223F33001CA560 /* dcguiutil.cpp */,
+				ADED364B0F223F26001CA560 /* IMeshTree.cpp */,
+				ADED362B0F223EEF001CA560 /* cMeshBucket.cpp */,
+				ADED362C0F223EEF001CA560 /* cLongSideTree.cpp */,
+				ADED362D0F223EEF001CA560 /* dcguiutil.h */,
+				ADED362E0F223EEF001CA560 /* DCGSceneUtil.cpp */,
+				ADED362F0F223EEF001CA560 /* IMeshTree.h */,
+				ADED36300F223EEF001CA560 /* dcgmeshutil.cpp */,
+				ADED36320F223EEF001CA560 /* dcgmeshutil.h */,
+				ADED36330F223EEF001CA560 /* cOctTree.cpp */,
+				ADED36340F223EEF001CA560 /* cOctTree.h */,
+				ADED36350F223EEF001CA560 /* cMeshBucket.h */,
+				ADED36360F223EEF001CA560 /* cLongSideTree.h */,
+				ADED36160F223EBB001CA560 /* cEdgeMeshBucket.h */,
+				ADED36170F223EBB001CA560 /* cEdgeMeshBucket.cpp */,
+				ADED36180F223EBB001CA560 /* cEdgeOctTree.cpp */,
+				ADED36190F223EBB001CA560 /* IEdgeTree.cpp */,
+				ADED361A0F223EBB001CA560 /* cEdgeLongSideTree.h */,
+				ADED361B0F223EBB001CA560 /* IEdgeTree.h */,
+				ADED361C0F223EBB001CA560 /* cEdgeLongSideTree.cpp */,
+				ADED361D0F223EBB001CA560 /* cEdgeOctTree.h */,
+				ADED35FE0F223E8B001CA560 /* WireframeFacetMeshAccumulator.h */,
+				ADED36030F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp */,
+				ADED35D00F223E38001CA560 /* ToonSettings.h */,
+				ADED35D10F223E38001CA560 /* WireRendererDef.h */,
+				ADED35D20F223E38001CA560 /* ToonOverrideCache.cpp */,
+				ADED35D30F223E38001CA560 /* ToonOverrideCache.h */,
+				ADED35D50F223E38001CA560 /* WireRenderer.h */,
+				ADED35D60F223E38001CA560 /* WireRendererData.h */,
+				ADED35D90F223E38001CA560 /* ToonEnabledDef.h */,
+				ADED35DA0F223E38001CA560 /* ToonEnabled.h */,
+				ADED35DB0F223E38001CA560 /* ToonEnabled.cpp */,
+				ADED35DC0F223E38001CA560 /* WireRenderer.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AD199431118CF2640016CAD2 /* C8 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */,
+			);
+			name = "C8 SDK";
+			sourceTree = "<group>";
+		};
+		ADD164050F1FE385006C76AF /* C7 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */,
+			);
+			name = "C7 SDK";
+			sourceTree = "<group>";
+		};
+		ADFE21600C877C8D00D470F8 /* C6 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE21610C877CA600D470F8 /* COMUtilities.cpp */,
+			);
+			name = "C6 SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD199432118CF2850016CAD2 /* C8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD199443118CF2850016CAD2 /* Build configuration list for PBXNativeTarget "C8" */;
+			buildPhases = (
+				AD199433118CF2850016CAD2 /* Sources */,
+				AD19943F118CF2850016CAD2 /* Frameworks */,
+				AD199440118CF2850016CAD2 /* Rez */,
+				AD199442118CF2850016CAD2 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C8;
+			productName = Myextension;
+			productReference = AD199446118CF2850016CAD2 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADD163E80F1FE244006C76AF /* C7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD163F90F1FE244006C76AF /* Build configuration list for PBXNativeTarget "C7" */;
+			buildPhases = (
+				ADD163E90F1FE244006C76AF /* Sources */,
+				ADD163F50F1FE244006C76AF /* Frameworks */,
+				ADD163F60F1FE244006C76AF /* Rez */,
+				ADD163F80F1FE244006C76AF /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C7;
+			productName = Myextension;
+			productReference = ADD163FC0F1FE244006C76AF /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADFE21480C877C5000D470F8 /* C6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFE21580C877C5000D470F8 /* Build configuration list for PBXNativeTarget "C6" */;
+			buildPhases = (
+				ADFE21490C877C5000D470F8 /* Sources */,
+				ADFE21540C877C5000D470F8 /* Frameworks */,
+				ADFE21550C877C5000D470F8 /* Rez */,
+				ADFE21570C877C5000D470F8 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C6;
+			productName = Myextension;
+			productReference = ADFE215B0C877C5000D470F8 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE14C90A8978E00055D091 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 95CE14C70A8978E00055D091;
+			productRefGroup = 95CE14DA0A8979340055D091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFE21480C877C5000D470F8 /* C6 */,
+				ADD163E80F1FE244006C76AF /* C7 */,
+				AD199432118CF2850016CAD2 /* C8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		AD199440118CF2850016CAD2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED35F40F223E45001CA560 /* WireframePro.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163F60F1FE244006C76AF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED35F70F223E45001CA560 /* WireframePro.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21550C877C5000D470F8 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED35F10F223E45001CA560 /* WireframePro.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD199442118CF2850016CAD2 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+		ADD163F80F1FE244006C76AF /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+		ADFE21570C877C5000D470F8 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD199433118CF2850016CAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD36A185119390740015DBD1 /* ToonOverrideCache.cpp in Sources */,
+				AD36A187119390750015DBD1 /* cOctTree.cpp in Sources */,
+				AD36A188119390750015DBD1 /* IEdgeTree.cpp in Sources */,
+				AD36A189119390760015DBD1 /* cMeshBucket.cpp in Sources */,
+				AD36A18A119390760015DBD1 /* cEdgeLongSideTree.cpp in Sources */,
+				AD36A18B119390770015DBD1 /* cEdgeOctTree.cpp in Sources */,
+				AD36A18E119390780015DBD1 /* cLongSideTree.cpp in Sources */,
+				AD36A18F119390790015DBD1 /* WireRenderer.cpp in Sources */,
+				AD36A1901193907A0015DBD1 /* DCGSceneUtil.cpp in Sources */,
+				AD36A1921193907B0015DBD1 /* COMUtilities.cpp in Sources */,
+				AD36A1931193907C0015DBD1 /* ToonEnabled.cpp in Sources */,
+				AD36A1941193907C0015DBD1 /* cEdgeMeshBucket.cpp in Sources */,
+				AD36A1951193907D0015DBD1 /* IMeshTree.cpp in Sources */,
+				AD36A1961193907E0015DBD1 /* WireframeFacetMeshAccumulator.cpp in Sources */,
+				AD36A1971193907E0015DBD1 /* dcguiutil.cpp in Sources */,
+				AD36A1981193907F0015DBD1 /* Wireframe.cpp in Sources */,
+				AD36A199119390800015DBD1 /* dcgmeshutil.cpp in Sources */,
+				AD36A19B119390810015DBD1 /* WireframeProDLL.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163E90F1FE244006C76AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD164080F1FE3B4006C76AF /* COMUtilities.cpp in Sources */,
+				ADED35E50F223E38001CA560 /* ToonOverrideCache.cpp in Sources */,
+				ADED35E70F223E38001CA560 /* ToonEnabled.cpp in Sources */,
+				ADED35E80F223E38001CA560 /* WireRenderer.cpp in Sources */,
+				ADED35F50F223E45001CA560 /* Wireframe.cpp in Sources */,
+				ADED35F60F223E45001CA560 /* WireframeProDLL.cpp in Sources */,
+				ADED36140F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp in Sources */,
+				ADED36260F223EBB001CA560 /* cEdgeMeshBucket.cpp in Sources */,
+				ADED36270F223EBB001CA560 /* cEdgeOctTree.cpp in Sources */,
+				ADED36280F223EBB001CA560 /* IEdgeTree.cpp in Sources */,
+				ADED36290F223EBB001CA560 /* cEdgeLongSideTree.cpp in Sources */,
+				ADED36430F223EEF001CA560 /* cMeshBucket.cpp in Sources */,
+				ADED36440F223EEF001CA560 /* cLongSideTree.cpp in Sources */,
+				ADED36450F223EEF001CA560 /* DCGSceneUtil.cpp in Sources */,
+				ADED36460F223EEF001CA560 /* dcgmeshutil.cpp in Sources */,
+				ADED36480F223EEF001CA560 /* cOctTree.cpp in Sources */,
+				ADED364E0F223F26001CA560 /* IMeshTree.cpp in Sources */,
+				ADED36530F223F33001CA560 /* dcguiutil.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21490C877C5000D470F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE21620C877CA600D470F8 /* COMUtilities.cpp in Sources */,
+				ADED35DD0F223E38001CA560 /* ToonOverrideCache.cpp in Sources */,
+				ADED35DF0F223E38001CA560 /* ToonEnabled.cpp in Sources */,
+				ADED35E00F223E38001CA560 /* WireRenderer.cpp in Sources */,
+				ADED35EF0F223E45001CA560 /* Wireframe.cpp in Sources */,
+				ADED35F00F223E45001CA560 /* WireframeProDLL.cpp in Sources */,
+				ADED360A0F223E8B001CA560 /* WireframeFacetMeshAccumulator.cpp in Sources */,
+				ADED361E0F223EBB001CA560 /* cEdgeMeshBucket.cpp in Sources */,
+				ADED361F0F223EBB001CA560 /* cEdgeOctTree.cpp in Sources */,
+				ADED36200F223EBB001CA560 /* IEdgeTree.cpp in Sources */,
+				ADED36210F223EBB001CA560 /* cEdgeLongSideTree.cpp in Sources */,
+				ADED36370F223EEF001CA560 /* cMeshBucket.cpp in Sources */,
+				ADED36380F223EEF001CA560 /* cLongSideTree.cpp in Sources */,
+				ADED36390F223EEF001CA560 /* DCGSceneUtil.cpp in Sources */,
+				ADED363A0F223EEF001CA560 /* dcgmeshutil.cpp in Sources */,
+				ADED363C0F223EEF001CA560 /* cOctTree.cpp in Sources */,
+				ADED364C0F223F26001CA560 /* IMeshTree.cpp in Sources */,
+				ADED36510F223F33001CA560 /* dcguiutil.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95CE14CB0A8978E00055D091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATH = $CARRAPATHPRO;
+				CARRAPATHDEBUG = /cvs/Charles/exec/Debug/Carrara.app;
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-fexceptions";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug;
+		};
+		95CE14CC0A8978E00055D091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CARRAPATH = $CARRAPATHPRO;
+				CARRAPATHDEBUG = /cvs/Charles/exec/Debug/Carrara.app;
+				CARRAPATHPRO = /Applications/Carrara5Pro/CarraraPro.app;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-fexceptions";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release;
+		};
+		AD199444118CF2850016CAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				CARRAPATHPRO = "/Applications/DAZ 3D/Carrara8.5/Carrara.app";
+				CARRARAPATHSDK = ../../Carrara8SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GCC_VERSION = 4.2;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/PPC/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/i386/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/x86_64/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/PPC/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/i386/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/x86_64/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		AD199445118CF2850016CAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara8;
+				CARRARAPATHSDK = ../../Carrara8SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.2;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/PPC/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/i386/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/x86_64/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/PPC/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/i386/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/x86_64/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ADD163FA0F1FE244006C76AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara7;
+				CARRARAPATHSDK = ../../Carrara7SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ADD163FB0F1FE244006C76AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara7;
+				CARRARAPATHSDK = ../../Carrara7SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ADFE21590C877C5000D470F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				CARRARAPATHSDK = ../../Carrara6SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ADFE215A0C877C5000D470F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				CARRARAPATHSDK = ../../Carrara6SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14CB0A8978E00055D091 /* Debug */,
+				95CE14CC0A8978E00055D091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD199443118CF2850016CAD2 /* Build configuration list for PBXNativeTarget "C8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD199444118CF2850016CAD2 /* Debug */,
+				AD199445118CF2850016CAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD163F90F1FE244006C76AF /* Build configuration list for PBXNativeTarget "C7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD163FA0F1FE244006C76AF /* Debug */,
+				ADD163FB0F1FE244006C76AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFE21580C877C5000D470F8 /* Build configuration list for PBXNativeTarget "C6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE21590C877C5000D470F8 /* Debug */,
+				ADFE215A0C877C5000D470F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE14C90A8978E00055D091 /* Project object */;
+}
