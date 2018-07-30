@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD36A12911938ECD0015DBD1 /* Beach.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35110F223C51001CA560 /* Beach.cpp */; };
+		AD36A12B11938ECD0015DBD1 /* IEdgeTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35470F223CA2001CA560 /* IEdgeTree.cpp */; };
+		AD36A12C11938ECE0015DBD1 /* cEdgeLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED354D0F223CA2001CA560 /* cEdgeLongSideTree.cpp */; };
+		AD36A12D11938ECE0015DBD1 /* cEdgeOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35460F223CA2001CA560 /* cEdgeOctTree.cpp */; };
+		AD36A12E11938ECF0015DBD1 /* TerrainToolsDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35150F223C51001CA560 /* TerrainToolsDLL.cpp */; };
+		AD36A13011938ED10015DBD1 /* Surf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35140F223C51001CA560 /* Surf.cpp */; };
+		AD36A13111938ED20015DBD1 /* NormalToTerrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED350F0F223C51001CA560 /* NormalToTerrain.cpp */; };
+		AD36A13211938ED20015DBD1 /* Intersect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35180F223C51001CA560 /* Intersect.cpp */; };
+		AD36A13311938ED30015DBD1 /* TerrainToNormal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35100F223C51001CA560 /* TerrainToNormal.cpp */; };
+		AD36A13511938ED50015DBD1 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */; };
+		AD36A13611938ED50015DBD1 /* DCGBezier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35480F223CA2001CA560 /* DCGBezier.cpp */; };
+		AD36A13711938ED60015DBD1 /* cTransformer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35630F223CB7001CA560 /* cTransformer.cpp */; };
+		AD36A13811938ED70015DBD1 /* cEdgeMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35450F223CA2001CA560 /* cEdgeMeshBucket.cpp */; };
+		AD36A13A11938ED90015DBD1 /* InfinitePlaneEdgeHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED351A0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp */; };
+		AD36A13B11938EDA0015DBD1 /* DCGShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED354B0F223CA2001CA560 /* DCGShaderHelper.cpp */; };
+		AD36A13C11938EDA0015DBD1 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD199480118CF9E00016CAD2 /* QtCore.framework */; };
+		AD36A13D11938EDB0015DBD1 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD199481118CF9E00016CAD2 /* QtGui.framework */; };
+		ADD164080F1FE3B4006C76AF /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */; };
+		ADED35250F223C51001CA560 /* NormalToTerrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED350F0F223C51001CA560 /* NormalToTerrain.cpp */; };
+		ADED35260F223C51001CA560 /* TerrainToNormal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35100F223C51001CA560 /* TerrainToNormal.cpp */; };
+		ADED35270F223C51001CA560 /* Beach.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35110F223C51001CA560 /* Beach.cpp */; };
+		ADED35280F223C51001CA560 /* Surf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35140F223C51001CA560 /* Surf.cpp */; };
+		ADED35290F223C51001CA560 /* TerrainToolsDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35150F223C51001CA560 /* TerrainToolsDLL.cpp */; };
+		ADED352A0F223C51001CA560 /* TerrainTools.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED35160F223C51001CA560 /* TerrainTools.r */; };
+		ADED352B0F223C51001CA560 /* Intersect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35180F223C51001CA560 /* Intersect.cpp */; };
+		ADED352C0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED351A0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp */; };
+		ADED35330F223C51001CA560 /* TerrainTools.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED35160F223C51001CA560 /* TerrainTools.r */; };
+		ADED35370F223C51001CA560 /* NormalToTerrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED350F0F223C51001CA560 /* NormalToTerrain.cpp */; };
+		ADED35380F223C51001CA560 /* TerrainToNormal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35100F223C51001CA560 /* TerrainToNormal.cpp */; };
+		ADED35390F223C51001CA560 /* Beach.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35110F223C51001CA560 /* Beach.cpp */; };
+		ADED353A0F223C51001CA560 /* Surf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35140F223C51001CA560 /* Surf.cpp */; };
+		ADED353B0F223C51001CA560 /* TerrainToolsDLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35150F223C51001CA560 /* TerrainToolsDLL.cpp */; };
+		ADED353C0F223C51001CA560 /* TerrainTools.r in Rez */ = {isa = PBXBuildFile; fileRef = ADED35160F223C51001CA560 /* TerrainTools.r */; };
+		ADED353D0F223C51001CA560 /* Intersect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35180F223C51001CA560 /* Intersect.cpp */; };
+		ADED353E0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED351A0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp */; };
+		ADED35500F223CA2001CA560 /* cEdgeMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35450F223CA2001CA560 /* cEdgeMeshBucket.cpp */; };
+		ADED35510F223CA2001CA560 /* cEdgeOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35460F223CA2001CA560 /* cEdgeOctTree.cpp */; };
+		ADED35520F223CA2001CA560 /* IEdgeTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35470F223CA2001CA560 /* IEdgeTree.cpp */; };
+		ADED35530F223CA2001CA560 /* DCGBezier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35480F223CA2001CA560 /* DCGBezier.cpp */; };
+		ADED35540F223CA2001CA560 /* DCGShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED354B0F223CA2001CA560 /* DCGShaderHelper.cpp */; };
+		ADED35550F223CA2001CA560 /* cEdgeLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED354D0F223CA2001CA560 /* cEdgeLongSideTree.cpp */; };
+		ADED355C0F223CA2001CA560 /* cEdgeMeshBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35450F223CA2001CA560 /* cEdgeMeshBucket.cpp */; };
+		ADED355D0F223CA2001CA560 /* cEdgeOctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35460F223CA2001CA560 /* cEdgeOctTree.cpp */; };
+		ADED355E0F223CA2001CA560 /* IEdgeTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35470F223CA2001CA560 /* IEdgeTree.cpp */; };
+		ADED355F0F223CA2001CA560 /* DCGBezier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35480F223CA2001CA560 /* DCGBezier.cpp */; };
+		ADED35600F223CA2001CA560 /* DCGShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED354B0F223CA2001CA560 /* DCGShaderHelper.cpp */; };
+		ADED35610F223CA2001CA560 /* cEdgeLongSideTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED354D0F223CA2001CA560 /* cEdgeLongSideTree.cpp */; };
+		ADED35650F223CB7001CA560 /* cTransformer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35630F223CB7001CA560 /* cTransformer.cpp */; };
+		ADED35670F223CB7001CA560 /* cTransformer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADED35630F223CB7001CA560 /* cTransformer.cpp */; };
+		ADFE21620C877CA600D470F8 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADFE21610C877CA600D470F8 /* COMUtilities.cpp */; };
+		D3D97BD52106886B00FC6E87 /* Cutout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3D97BD32106886B00FC6E87 /* Cutout.cpp */; };
+		D3D97BD62106886B00FC6E87 /* Cutout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3D97BD32106886B00FC6E87 /* Cutout.cpp */; };
+		D3D97BD72106886B00FC6E87 /* Cutout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3D97BD32106886B00FC6E87 /* Cutout.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD199446118CF2850016CAD2 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara8SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		AD199480118CF9E00016CAD2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../Carrara8SDK/Lib/Mac/Frameworks/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		AD199481118CF9E00016CAD2 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../Carrara8SDK/Lib/Mac/Frameworks/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		ADD163FC0F1FE244006C76AF /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara7SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		ADED350C0F223C51001CA560 /* TerrainToolsCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerrainToolsCommon.h; sourceTree = "<group>"; };
+		ADED350D0F223C51001CA560 /* Intersect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intersect.h; sourceTree = "<group>"; };
+		ADED350E0F223C51001CA560 /* Surf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surf.h; sourceTree = "<group>"; };
+		ADED350F0F223C51001CA560 /* NormalToTerrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalToTerrain.cpp; sourceTree = "<group>"; };
+		ADED35100F223C51001CA560 /* TerrainToNormal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TerrainToNormal.cpp; sourceTree = "<group>"; };
+		ADED35110F223C51001CA560 /* Beach.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Beach.cpp; sourceTree = "<group>"; };
+		ADED35120F223C51001CA560 /* TerrainToolsDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerrainToolsDLL.h; sourceTree = "<group>"; };
+		ADED35130F223C51001CA560 /* NormalToTerrainDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalToTerrainDef.h; sourceTree = "<group>"; };
+		ADED35140F223C51001CA560 /* Surf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Surf.cpp; sourceTree = "<group>"; };
+		ADED35150F223C51001CA560 /* TerrainToolsDLL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TerrainToolsDLL.cpp; sourceTree = "<group>"; };
+		ADED35160F223C51001CA560 /* TerrainTools.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = TerrainTools.r; sourceTree = "<group>"; };
+		ADED35170F223C51001CA560 /* triangleintersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangleintersection.h; sourceTree = "<group>"; };
+		ADED35180F223C51001CA560 /* Intersect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Intersect.cpp; sourceTree = "<group>"; };
+		ADED35190F223C51001CA560 /* TerrainToNormalDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerrainToNormalDef.h; sourceTree = "<group>"; };
+		ADED351A0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfinitePlaneEdgeHelper.cpp; sourceTree = "<group>"; };
+		ADED351C0F223C51001CA560 /* BeachDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachDef.h; sourceTree = "<group>"; };
+		ADED351D0F223C51001CA560 /* SurfDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurfDef.h; sourceTree = "<group>"; };
+		ADED35200F223C51001CA560 /* Beach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beach.h; sourceTree = "<group>"; };
+		ADED35210F223C51001CA560 /* TerrainToNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerrainToNormal.h; sourceTree = "<group>"; };
+		ADED35220F223C51001CA560 /* NormalToTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalToTerrain.h; sourceTree = "<group>"; };
+		ADED35230F223C51001CA560 /* IntersectDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntersectDef.h; sourceTree = "<group>"; };
+		ADED35240F223C51001CA560 /* InfinitePlaneEdgeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfinitePlaneEdgeHelper.h; sourceTree = "<group>"; };
+		ADED35440F223CA2001CA560 /* cEdgeMeshBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cEdgeMeshBucket.h; path = ../Common/cEdgeMeshBucket.h; sourceTree = SOURCE_ROOT; };
+		ADED35450F223CA2001CA560 /* cEdgeMeshBucket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cEdgeMeshBucket.cpp; path = ../Common/cEdgeMeshBucket.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35460F223CA2001CA560 /* cEdgeOctTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cEdgeOctTree.cpp; path = ../Common/cEdgeOctTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35470F223CA2001CA560 /* IEdgeTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IEdgeTree.cpp; path = ../Common/IEdgeTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35480F223CA2001CA560 /* DCGBezier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCGBezier.cpp; path = ../Common/DCGBezier.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35490F223CA2001CA560 /* cEdgeLongSideTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cEdgeLongSideTree.h; path = ../Common/cEdgeLongSideTree.h; sourceTree = SOURCE_ROOT; };
+		ADED354A0F223CA2001CA560 /* IEdgeTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEdgeTree.h; path = ../Common/IEdgeTree.h; sourceTree = SOURCE_ROOT; };
+		ADED354B0F223CA2001CA560 /* DCGShaderHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCGShaderHelper.cpp; path = ../Common/DCGShaderHelper.cpp; sourceTree = SOURCE_ROOT; };
+		ADED354C0F223CA2001CA560 /* DCGShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGShaderHelper.h; path = ../Common/DCGShaderHelper.h; sourceTree = SOURCE_ROOT; };
+		ADED354D0F223CA2001CA560 /* cEdgeLongSideTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cEdgeLongSideTree.cpp; path = ../Common/cEdgeLongSideTree.cpp; sourceTree = SOURCE_ROOT; };
+		ADED354E0F223CA2001CA560 /* DCGBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGBezier.h; path = ../Common/DCGBezier.h; sourceTree = SOURCE_ROOT; };
+		ADED354F0F223CA2001CA560 /* cEdgeOctTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cEdgeOctTree.h; path = ../Common/cEdgeOctTree.h; sourceTree = SOURCE_ROOT; };
+		ADED35630F223CB7001CA560 /* cTransformer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cTransformer.cpp; path = ../Common/cTransformer.cpp; sourceTree = SOURCE_ROOT; };
+		ADED35640F223CB7001CA560 /* cTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cTransformer.h; path = ../Common/cTransformer.h; sourceTree = SOURCE_ROOT; };
+		ADFE215B0C877C5000D470F8 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE21610C877CA600D470F8 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../Carrara6SDK/Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		D3D97BD32106886B00FC6E87 /* Cutout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cutout.cpp; sourceTree = "<group>"; };
+		D3D97BD42106886B00FC6E87 /* Cutout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cutout.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD19943F118CF2850016CAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD36A13C11938EDA0015DBD1 /* QtCore.framework in Frameworks */,
+				AD36A13D11938EDB0015DBD1 /* QtGui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163F50F1FE244006C76AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21540C877C5000D470F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CE14C70A8978E00055D091 = {
+			isa = PBXGroup;
+			children = (
+				ADD164050F1FE385006C76AF /* C7 SDK */,
+				AD06671B0C87888000179EB6 /* Common */,
+				ADFE21600C877C8D00D470F8 /* C6 SDK */,
+				AD199431118CF2640016CAD2 /* C8 SDK */,
+				AD199480118CF9E00016CAD2 /* QtCore.framework */,
+				AD199481118CF9E00016CAD2 /* QtGui.framework */,
+				ADED350C0F223C51001CA560 /* TerrainToolsCommon.h */,
+				ADED350D0F223C51001CA560 /* Intersect.h */,
+				ADED350E0F223C51001CA560 /* Surf.h */,
+				ADED350F0F223C51001CA560 /* NormalToTerrain.cpp */,
+				ADED35100F223C51001CA560 /* TerrainToNormal.cpp */,
+				ADED35110F223C51001CA560 /* Beach.cpp */,
+				D3D97BD32106886B00FC6E87 /* Cutout.cpp */,
+				D3D97BD42106886B00FC6E87 /* Cutout.h */,
+				ADED35120F223C51001CA560 /* TerrainToolsDLL.h */,
+				ADED35130F223C51001CA560 /* NormalToTerrainDef.h */,
+				ADED35140F223C51001CA560 /* Surf.cpp */,
+				ADED35150F223C51001CA560 /* TerrainToolsDLL.cpp */,
+				ADED35160F223C51001CA560 /* TerrainTools.r */,
+				ADED35170F223C51001CA560 /* triangleintersection.h */,
+				ADED35180F223C51001CA560 /* Intersect.cpp */,
+				ADED35190F223C51001CA560 /* TerrainToNormalDef.h */,
+				ADED351A0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp */,
+				ADED351C0F223C51001CA560 /* BeachDef.h */,
+				ADED351D0F223C51001CA560 /* SurfDef.h */,
+				ADED35200F223C51001CA560 /* Beach.h */,
+				ADED35210F223C51001CA560 /* TerrainToNormal.h */,
+				ADED35220F223C51001CA560 /* NormalToTerrain.h */,
+				ADED35230F223C51001CA560 /* IntersectDef.h */,
+				ADED35240F223C51001CA560 /* InfinitePlaneEdgeHelper.h */,
+				95CE14DA0A8979340055D091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE14DA0A8979340055D091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE215B0C877C5000D470F8 /* Myextension.mcx */,
+				ADD163FC0F1FE244006C76AF /* Myextension.mcx */,
+				AD199446118CF2850016CAD2 /* Myextension.mcx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD06671B0C87888000179EB6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ADED35630F223CB7001CA560 /* cTransformer.cpp */,
+				ADED35640F223CB7001CA560 /* cTransformer.h */,
+				ADED35440F223CA2001CA560 /* cEdgeMeshBucket.h */,
+				ADED35450F223CA2001CA560 /* cEdgeMeshBucket.cpp */,
+				ADED35460F223CA2001CA560 /* cEdgeOctTree.cpp */,
+				ADED35470F223CA2001CA560 /* IEdgeTree.cpp */,
+				ADED35480F223CA2001CA560 /* DCGBezier.cpp */,
+				ADED35490F223CA2001CA560 /* cEdgeLongSideTree.h */,
+				ADED354A0F223CA2001CA560 /* IEdgeTree.h */,
+				ADED354B0F223CA2001CA560 /* DCGShaderHelper.cpp */,
+				ADED354C0F223CA2001CA560 /* DCGShaderHelper.h */,
+				ADED354D0F223CA2001CA560 /* cEdgeLongSideTree.cpp */,
+				ADED354E0F223CA2001CA560 /* DCGBezier.h */,
+				ADED354F0F223CA2001CA560 /* cEdgeOctTree.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AD199431118CF2640016CAD2 /* C8 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				AD19944C118CF2C30016CAD2 /* COMUtilities.cpp */,
+			);
+			name = "C8 SDK";
+			sourceTree = "<group>";
+		};
+		ADD164050F1FE385006C76AF /* C7 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				ADD164070F1FE3B4006C76AF /* COMUtilities.cpp */,
+			);
+			name = "C7 SDK";
+			sourceTree = "<group>";
+		};
+		ADFE21600C877C8D00D470F8 /* C6 SDK */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE21610C877CA600D470F8 /* COMUtilities.cpp */,
+			);
+			name = "C6 SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD199432118CF2850016CAD2 /* C8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD199443118CF2850016CAD2 /* Build configuration list for PBXNativeTarget "C8" */;
+			buildPhases = (
+				AD199433118CF2850016CAD2 /* Sources */,
+				AD19943F118CF2850016CAD2 /* Frameworks */,
+				AD199440118CF2850016CAD2 /* Rez */,
+				AD199442118CF2850016CAD2 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C8;
+			productName = Myextension;
+			productReference = AD199446118CF2850016CAD2 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADD163E80F1FE244006C76AF /* C7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD163F90F1FE244006C76AF /* Build configuration list for PBXNativeTarget "C7" */;
+			buildPhases = (
+				ADD163E90F1FE244006C76AF /* Sources */,
+				ADD163F50F1FE244006C76AF /* Frameworks */,
+				ADD163F60F1FE244006C76AF /* Rez */,
+				ADD163F80F1FE244006C76AF /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C7;
+			productName = Myextension;
+			productReference = ADD163FC0F1FE244006C76AF /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADFE21480C877C5000D470F8 /* C6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFE21580C877C5000D470F8 /* Build configuration list for PBXNativeTarget "C6" */;
+			buildPhases = (
+				ADFE21490C877C5000D470F8 /* Sources */,
+				ADFE21540C877C5000D470F8 /* Frameworks */,
+				ADFE21550C877C5000D470F8 /* Rez */,
+				ADFE21570C877C5000D470F8 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = C6;
+			productName = Myextension;
+			productReference = ADFE215B0C877C5000D470F8 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE14C90A8978E00055D091 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 95CE14C70A8978E00055D091;
+			productRefGroup = 95CE14DA0A8979340055D091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFE21480C877C5000D470F8 /* C6 */,
+				ADD163E80F1FE244006C76AF /* C7 */,
+				AD199432118CF2850016CAD2 /* C8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		AD199440118CF2850016CAD2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED35330F223C51001CA560 /* TerrainTools.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163F60F1FE244006C76AF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED353C0F223C51001CA560 /* TerrainTools.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21550C877C5000D470F8 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED352A0F223C51001CA560 /* TerrainTools.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD199442118CF2850016CAD2 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+		ADD163F80F1FE244006C76AF /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+		ADFE21570C877C5000D470F8 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n$CARRARAPATHSDK/Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo $CARRAPATH\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD199433118CF2850016CAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD36A12911938ECD0015DBD1 /* Beach.cpp in Sources */,
+				AD36A12B11938ECD0015DBD1 /* IEdgeTree.cpp in Sources */,
+				AD36A12C11938ECE0015DBD1 /* cEdgeLongSideTree.cpp in Sources */,
+				AD36A12D11938ECE0015DBD1 /* cEdgeOctTree.cpp in Sources */,
+				AD36A12E11938ECF0015DBD1 /* TerrainToolsDLL.cpp in Sources */,
+				AD36A13011938ED10015DBD1 /* Surf.cpp in Sources */,
+				AD36A13111938ED20015DBD1 /* NormalToTerrain.cpp in Sources */,
+				AD36A13211938ED20015DBD1 /* Intersect.cpp in Sources */,
+				AD36A13311938ED30015DBD1 /* TerrainToNormal.cpp in Sources */,
+				AD36A13511938ED50015DBD1 /* COMUtilities.cpp in Sources */,
+				AD36A13611938ED50015DBD1 /* DCGBezier.cpp in Sources */,
+				AD36A13711938ED60015DBD1 /* cTransformer.cpp in Sources */,
+				AD36A13811938ED70015DBD1 /* cEdgeMeshBucket.cpp in Sources */,
+				AD36A13A11938ED90015DBD1 /* InfinitePlaneEdgeHelper.cpp in Sources */,
+				AD36A13B11938EDA0015DBD1 /* DCGShaderHelper.cpp in Sources */,
+				D3D97BD72106886B00FC6E87 /* Cutout.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD163E90F1FE244006C76AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD164080F1FE3B4006C76AF /* COMUtilities.cpp in Sources */,
+				ADED35370F223C51001CA560 /* NormalToTerrain.cpp in Sources */,
+				ADED35380F223C51001CA560 /* TerrainToNormal.cpp in Sources */,
+				ADED35390F223C51001CA560 /* Beach.cpp in Sources */,
+				ADED353A0F223C51001CA560 /* Surf.cpp in Sources */,
+				ADED353B0F223C51001CA560 /* TerrainToolsDLL.cpp in Sources */,
+				ADED353D0F223C51001CA560 /* Intersect.cpp in Sources */,
+				ADED353E0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp in Sources */,
+				ADED355C0F223CA2001CA560 /* cEdgeMeshBucket.cpp in Sources */,
+				ADED355D0F223CA2001CA560 /* cEdgeOctTree.cpp in Sources */,
+				ADED355E0F223CA2001CA560 /* IEdgeTree.cpp in Sources */,
+				ADED355F0F223CA2001CA560 /* DCGBezier.cpp in Sources */,
+				ADED35600F223CA2001CA560 /* DCGShaderHelper.cpp in Sources */,
+				ADED35610F223CA2001CA560 /* cEdgeLongSideTree.cpp in Sources */,
+				ADED35670F223CB7001CA560 /* cTransformer.cpp in Sources */,
+				D3D97BD62106886B00FC6E87 /* Cutout.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE21490C877C5000D470F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE21620C877CA600D470F8 /* COMUtilities.cpp in Sources */,
+				ADED35250F223C51001CA560 /* NormalToTerrain.cpp in Sources */,
+				ADED35260F223C51001CA560 /* TerrainToNormal.cpp in Sources */,
+				ADED35270F223C51001CA560 /* Beach.cpp in Sources */,
+				ADED35280F223C51001CA560 /* Surf.cpp in Sources */,
+				ADED35290F223C51001CA560 /* TerrainToolsDLL.cpp in Sources */,
+				ADED352B0F223C51001CA560 /* Intersect.cpp in Sources */,
+				ADED352C0F223C51001CA560 /* InfinitePlaneEdgeHelper.cpp in Sources */,
+				ADED35500F223CA2001CA560 /* cEdgeMeshBucket.cpp in Sources */,
+				ADED35510F223CA2001CA560 /* cEdgeOctTree.cpp in Sources */,
+				ADED35520F223CA2001CA560 /* IEdgeTree.cpp in Sources */,
+				ADED35530F223CA2001CA560 /* DCGBezier.cpp in Sources */,
+				ADED35540F223CA2001CA560 /* DCGShaderHelper.cpp in Sources */,
+				ADED35550F223CA2001CA560 /* cEdgeLongSideTree.cpp in Sources */,
+				ADED35650F223CB7001CA560 /* cTransformer.cpp in Sources */,
+				D3D97BD52106886B00FC6E87 /* Cutout.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95CE14CB0A8978E00055D091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATH = $CARRAPATHPRO;
+				CARRAPATHDEBUG = /cvs/Charles/exec/Debug/Carrara.app;
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-fexceptions";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug;
+		};
+		95CE14CC0A8978E00055D091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CARRAPATH = $CARRAPATHPRO;
+				CARRAPATHDEBUG = /cvs/Charles/exec/Debug/Carrara.app;
+				CARRAPATHPRO = /Applications/Carrara5Pro/CarraraPro.app;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-fexceptions";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release;
+		};
+		AD199444118CF2850016CAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara8;
+				CARRARAPATHSDK = ../../Carrara8SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GCC_VERSION = 4.2;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/PPC/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/i386/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/x86_64/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/PPC/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/i386/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/x86_64/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		AD199445118CF2850016CAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara8;
+				CARRARAPATHSDK = ../../Carrara8SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../Carrara8SDK/Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.2;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/PPC/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/i386/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/x86_64/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/PPC/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/i386/SafeLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/x86_64/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ADD163FA0F1FE244006C76AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara7;
+				CARRARAPATHSDK = ../../Carrara7SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ADD163FB0F1FE244006C76AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara7;
+				CARRARAPATHSDK = ../../Carrara7SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ADFE21590C877C5000D470F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				CARRARAPATHSDK = ../../Carrara6SDK;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Debug/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Debug/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ADFE215A0C877C5000D470F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATHPRO = ../../Releases/MacStaging/Carrara6;
+				CARRARAPATHSDK = ../../Carrara6SDK;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "$CARRARAPATHSDK/Include/Common/exports-macho.exp";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.0;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "$CARRARAPATHSDK/Lib/Mac/Release/CommonLibrary.lib $CARRARAPATHSDK/Lib/Mac/Release/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = (
+					$CARRARAPATHSDK/Include/Carrara,
+					$CARRARAPATHSDK/Include/Common,
+					../Common,
+				);
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$CARRARAPATHSDK/Include/Carrara $CARRARAPATHSDK/Include/Common";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14CB0A8978E00055D091 /* Debug */,
+				95CE14CC0A8978E00055D091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD199443118CF2850016CAD2 /* Build configuration list for PBXNativeTarget "C8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD199444118CF2850016CAD2 /* Debug */,
+				AD199445118CF2850016CAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD163F90F1FE244006C76AF /* Build configuration list for PBXNativeTarget "C7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD163FA0F1FE244006C76AF /* Debug */,
+				ADD163FB0F1FE244006C76AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFE21580C877C5000D470F8 /* Build configuration list for PBXNativeTarget "C6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE21590C877C5000D470F8 /* Debug */,
+				ADFE215A0C877C5000D470F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE14C90A8978E00055D091 /* Project object */;
+}

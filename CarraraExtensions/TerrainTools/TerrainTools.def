@@ -1,0 +1,8 @@
+LIBRARY   TerrainTools
+EXPORTS
+			 MCDllInit
+			 MCDllGetClassObject
+			 MCDllCanUnloadNow
+			 MCDllCleanUp
+			 MCDllInitExceptionTranslator
+			 MCDllCleanUpExceptionTranslator

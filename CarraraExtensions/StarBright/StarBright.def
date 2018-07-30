@@ -1,0 +1,8 @@
+LIBRARY   StarBright
+EXPORTS
+			 MCDllInit
+			 MCDllGetClassObject
+			 MCDllCanUnloadNow
+			 MCDllCleanUp
+			 MCDllInitExceptionTranslator
+			 MCDllCleanUpExceptionTranslator
