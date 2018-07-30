@@ -1,0 +1,4 @@
+/D "qSMP"
+/D "qCOMSupport"
+/D "qIsInExtension"
+/D "qUseMCImageColorPicker"

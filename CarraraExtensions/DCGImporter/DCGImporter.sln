@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DCGImporter", "DCGImporter.vcproj", "{545B32A9-3D8D-49E8-807C-3C9B57B60576}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Carrara6Debug|Win32 = Carrara6Debug|Win32
+		Carrara6Debug|x64 = Carrara6Debug|x64
+		Carrara6Release|Win32 = Carrara6Release|Win32
+		Carrara6Release|x64 = Carrara6Release|x64
+		Carrara7Debug|Win32 = Carrara7Debug|Win32
+		Carrara7Debug|x64 = Carrara7Debug|x64
+		Carrara7Release|Win32 = Carrara7Release|Win32
+		Carrara7Release|x64 = Carrara7Release|x64
+		Carrara8Debug|Win32 = Carrara8Debug|Win32
+		Carrara8Debug|x64 = Carrara8Debug|x64
+		Carrara8Release|Win32 = Carrara8Release|Win32
+		Carrara8Release|x64 = Carrara8Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Debug|Win32.ActiveCfg = Carrara6Debug|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Debug|Win32.Build.0 = Carrara6Debug|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Debug|x64.ActiveCfg = Carrara6Debug|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Debug|x64.Build.0 = Carrara6Debug|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Release|Win32.ActiveCfg = Carrara6Release|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Release|Win32.Build.0 = Carrara6Release|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Release|x64.ActiveCfg = Carrara6Release|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara6Release|x64.Build.0 = Carrara6Release|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Debug|Win32.ActiveCfg = Carrara7Debug|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Debug|Win32.Build.0 = Carrara7Debug|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Debug|x64.ActiveCfg = Carrara7Debug|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Debug|x64.Build.0 = Carrara7Debug|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Release|Win32.ActiveCfg = Carrara7Release|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Release|Win32.Build.0 = Carrara7Release|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Release|x64.ActiveCfg = Carrara7Release|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara7Release|x64.Build.0 = Carrara7Release|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Debug|Win32.ActiveCfg = Carrara8Debug|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Debug|Win32.Build.0 = Carrara8Debug|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Debug|x64.ActiveCfg = Carrara8Debug|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Debug|x64.Build.0 = Carrara8Debug|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Release|Win32.ActiveCfg = Carrara8Release|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Release|Win32.Build.0 = Carrara8Release|Win32
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Release|x64.ActiveCfg = Carrara8Release|x64
+		{545B32A9-3D8D-49E8-807C-3C9B57B60576}.Carrara8Release|x64.Build.0 = Carrara8Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
