@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		ADA3A8B50EC7447100B058E2 /* GroundControl.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D576316048677EA00EA77CD /* GroundControl.plugin */; };
+		ADF106DC0EC72FCB005A916F /* servmain.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D70EC72FCB005A916F /* servmain.c */; };
+		ADF106DD0EC72FCB005A916F /* shutdown.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D80EC72FCB005A916F /* shutdown.c */; };
+		ADF106DE0EC72FCB005A916F /* startup.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D90EC72FCB005A916F /* startup.c */; };
+		ADF106DF0EC72FCB005A916F /* username.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106DA0EC72FCB005A916F /* username.c */; };
+		D3D1E6761979A7980013DFCB /* gcImageLoad.c in Sources */ = {isa = PBXBuildFile; fileRef = D3D1E6741979A7980013DFCB /* gcImageLoad.c */; };
+		D3D1E6771979A7980013DFCB /* gcMain.c in Sources */ = {isa = PBXBuildFile; fileRef = D3D1E6751979A7980013DFCB /* gcMain.c */; };
+		D3D1E6791979A7A10013DFCB /* gcMeshload.c in Sources */ = {isa = PBXBuildFile; fileRef = D3D1E6781979A7A10013DFCB /* gcMeshload.c */; };
+		D3D1E6831979A7F30013DFCB /* DCGBinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = D3D1E6821979A7F30013DFCB /* DCGBinaryTree.c */; };
+		D3D1E6851979A7FF0013DFCB /* GroundControlLib.c in Sources */ = {isa = PBXBuildFile; fileRef = D3D1E6841979A7FF0013DFCB /* GroundControlLib.c */; };
+		D3D1E6871979A8060013DFCB /* GroundControlLibInternal.c in Sources */ = {isa = PBXBuildFile; fileRef = D3D1E6861979A8060013DFCB /* GroundControlLibInternal.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADA3A8A90EC743A500B058E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Applications/NewTek/LightWave3D_2015.3/support/plugins;
+			dstSubfolderSpec = 0;
+			files = (
+				ADA3A8B50EC7447100B058E2 /* GroundControl.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		8D576316048677EA00EA77CD /* GroundControl.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroundControl.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ADA3A8940EC7419000B058E2 /* Boolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Boolean.h; path = ../Common/Boolean.h; sourceTree = SOURCE_ROOT; };
+		ADA3A8950EC7419000B058E2 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundingBox.h; path = ../Common/BoundingBox.h; sourceTree = SOURCE_ROOT; };
+		ADA3A8960EC7419000B058E2 /* EdgeTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeTree.h; path = ../Common/EdgeTree.h; sourceTree = SOURCE_ROOT; };
+		ADA3A8980EC7419000B058E2 /* MathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MathHelper.h; path = ../Common/MathHelper.h; sourceTree = SOURCE_ROOT; };
+		ADA3A89A0EC7419000B058E2 /* WorkingStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkingStructs.h; path = ../Common/WorkingStructs.h; sourceTree = SOURCE_ROOT; };
+		ADF106D70EC72FCB005A916F /* servmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = servmain.c; path = ../../Lightwave9SDK/source/servmain.c; sourceTree = SOURCE_ROOT; };
+		ADF106D80EC72FCB005A916F /* shutdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shutdown.c; path = ../../Lightwave9SDK/source/shutdown.c; sourceTree = SOURCE_ROOT; };
+		ADF106D90EC72FCB005A916F /* startup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = startup.c; path = ../../Lightwave9SDK/source/startup.c; sourceTree = SOURCE_ROOT; };
+		ADF106DA0EC72FCB005A916F /* username.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = username.c; path = ../../Lightwave9SDK/source/username.c; sourceTree = SOURCE_ROOT; };
+		D30E60851979AD88008CF5C6 /* DCGBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGBinaryTree.h; path = ../../Library/GroundControl/DCGBinaryTree.h; sourceTree = SOURCE_ROOT; };
+		D3A4BA26197AB8A400CE14E1 /* GroundControlLibInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLibInternal.h; path = ../../Library/GroundControl/GroundControlLibInternal.h; sourceTree = SOURCE_ROOT; };
+		D3A4BA27197AB8A400CE14E1 /* GroundControlLibMathHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLibMathHelpers.h; path = ../../Library/GroundControl/GroundControlLibMathHelpers.h; sourceTree = SOURCE_ROOT; };
+		D3A4BA28197AB8A400CE14E1 /* GroundControlLibMeshHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLibMeshHelpers.h; path = ../../Library/GroundControl/GroundControlLibMeshHelpers.h; sourceTree = SOURCE_ROOT; };
+		D3A4BA29197AB8AE00CE14E1 /* GroundControlLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLib.h; path = ../../Library/GroundControl/GroundControlLib.h; sourceTree = SOURCE_ROOT; };
+		D3A6E771197AFF1A0083273A /* Alias.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Alias.plugin; sourceTree = "<group>"; };
+		D3A6E772197AFF1A0083273A /* Aura_Exporter.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Aura_Exporter.plugin; sourceTree = "<group>"; };
+		D3A6E773197AFF1A0083273A /* BMP.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BMP.plugin; sourceTree = "<group>"; };
+		D3A6E774197AFF1A0083273A /* cadIO.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = cadIO.plugin; sourceTree = "<group>"; };
+		D3A6E775197AFF1A0083273A /* CineonFP.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CineonFP.plugin; sourceTree = "<group>"; };
+		D3A6E776197AFF1A0083273A /* Conv3D.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Conv3D.plugin; sourceTree = "<group>"; };
+		D3A6E777197AFF1A0083273A /* DPX.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DPX.plugin; sourceTree = "<group>"; };
+		D3A6E778197AFF1A0083273A /* DRLA.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DRLA.plugin; sourceTree = "<group>"; };
+		D3A6E779197AFF1A0083273A /* EPSExport.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EPSExport.plugin; sourceTree = "<group>"; };
+		D3A6E77A197AFF1A0083273A /* ExportVRML.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ExportVRML.plugin; sourceTree = "<group>"; };
+		D3A6E77B197AFF1A0083273A /* GroundControl.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = GroundControl.plugin; sourceTree = "<group>"; };
+		D3A6E77C197AFF1A0083273A /* IFF.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = IFF.plugin; sourceTree = "<group>"; };
+		D3A6E77D197AFF1A0083273A /* IncObjSave-Mod.lsc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IncObjSave-Mod.lsc"; sourceTree = "<group>"; };
+		D3A6E77E197AFF1A0083273A /* IncObjSave.lsc */ = {isa = PBXFileReference; lastKnownFileType = file; path = IncObjSave.lsc; sourceTree = "<group>"; };
+		D3A6E77F197AFF1A0083273A /* IncSceneSave.lsc */ = {isa = PBXFileReference; lastKnownFileType = file; path = IncSceneSave.lsc; sourceTree = "<group>"; };
+		D3A6E780197AFF1A0083273A /* JPEG.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = JPEG.plugin; sourceTree = "<group>"; };
+		D3A6E781197AFF1A0083273A /* LFSFPSConverter.lsc */ = {isa = PBXFileReference; lastKnownFileType = file; path = LFSFPSConverter.lsc; sourceTree = "<group>"; };
+		D3A6E782197AFF1A0083273A /* LSFPSConverter.lsc */ = {isa = PBXFileReference; lastKnownFileType = file; path = LSFPSConverter.lsc; sourceTree = "<group>"; };
+		D3A6E783197AFF1A0083273A /* LWDevice_HID_3Dconnexion.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LWDevice_HID_3Dconnexion.plugin; sourceTree = "<group>"; };
+		D3A6E784197AFF1A0083273A /* LWDevice_HID_MSSideWinderFFWheel.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LWDevice_HID_MSSideWinderFFWheel.plugin; sourceTree = "<group>"; };
+		D3A6E785197AFF1A0083273A /* LWDevice_HID_PS3.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LWDevice_HID_PS3.plugin; sourceTree = "<group>"; };
+		D3A6E786197AFF1A0083273A /* LWDeviceManager_HID.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LWDeviceManager_HID.plugin; sourceTree = "<group>"; };
+		D3A6E787197AFF1A0083273A /* LWDeviceManager_InterSense.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LWDeviceManager_InterSense.plugin; sourceTree = "<group>"; };
+		D3A6E788197AFF1A0083273A /* LWDeviceManager_MoveMe.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LWDeviceManager_MoveMe.plugin; sourceTree = "<group>"; };
+		D3A6E789197AFF1A0083273A /* MDD_Multi-Loader.lsc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MDD_Multi-Loader.lsc"; sourceTree = "<group>"; };
+		D3A6E78A197AFF1A0083273A /* OpenEXR.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OpenEXR.plugin; sourceTree = "<group>"; };
+		D3A6E78B197AFF1A0083273A /* PCX.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PCX.plugin; sourceTree = "<group>"; };
+		D3A6E78C197AFF1A0083273A /* PICT.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PICT.plugin; sourceTree = "<group>"; };
+		D3A6E78D197AFF1B0083273A /* PNG.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PNG.plugin; sourceTree = "<group>"; };
+		D3A6E78E197AFF1B0083273A /* PSD.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PSD.plugin; sourceTree = "<group>"; };
+		D3A6E78F197AFF1B0083273A /* PSDExport.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PSDExport.plugin; sourceTree = "<group>"; };
+		D3A6E790197AFF1B0083273A /* QTTools.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = QTTools.plugin; sourceTree = "<group>"; };
+		D3A6E791197AFF1B0083273A /* RAD.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RAD.plugin; sourceTree = "<group>"; };
+		D3A6E792197AFF1B0083273A /* RLA.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RLA.plugin; sourceTree = "<group>"; };
+		D3A6E793197AFF1B0083273A /* SDTS.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SDTS.plugin; sourceTree = "<group>"; };
+		D3A6E794197AFF1B0083273A /* SGI.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SGI.plugin; sourceTree = "<group>"; };
+		D3A6E795197AFF1B0083273A /* SGI64.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SGI64.plugin; sourceTree = "<group>"; };
+		D3A6E796197AFF1B0083273A /* SpriteGen.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SpriteGen.plugin; sourceTree = "<group>"; };
+		D3A6E797197AFF1B0083273A /* SUN.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SUN.plugin; sourceTree = "<group>"; };
+		D3A6E798197AFF1B0083273A /* TGA.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TGA.plugin; sourceTree = "<group>"; };
+		D3A6E799197AFF1B0083273A /* TIFF.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TIFF.plugin; sourceTree = "<group>"; };
+		D3A6E79A197AFF1B0083273A /* Valkyrie.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Valkyrie.plugin; sourceTree = "<group>"; };
+		D3A6E79B197AFF1B0083273A /* VideoTap.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VideoTap.plugin; sourceTree = "<group>"; };
+		D3A6E79C197AFF1B0083273A /* VPB.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VPB.plugin; sourceTree = "<group>"; };
+		D3A6E79D197AFF1B0083273A /* YUV.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YUV.plugin; sourceTree = "<group>"; };
+		D3D1E6741979A7980013DFCB /* gcImageLoad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gcImageLoad.c; sourceTree = "<group>"; };
+		D3D1E6751979A7980013DFCB /* gcMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gcMain.c; sourceTree = "<group>"; };
+		D3D1E6781979A7A10013DFCB /* gcMeshload.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gcMeshload.c; sourceTree = "<group>"; };
+		D3D1E6821979A7F30013DFCB /* DCGBinaryTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DCGBinaryTree.c; path = ../../Library/GroundControl/DCGBinaryTree.c; sourceTree = SOURCE_ROOT; };
+		D3D1E6841979A7FF0013DFCB /* GroundControlLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GroundControlLib.c; path = ../../Library/GroundControl/GroundControlLib.c; sourceTree = SOURCE_ROOT; };
+		D3D1E6861979A8060013DFCB /* GroundControlLibInternal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GroundControlLibInternal.c; path = ../../Library/GroundControl/GroundControlLibInternal.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E86B830B6122580076C6BF /* lwsdk */ = {
+			isa = PBXGroup;
+			children = (
+				ADF106D70EC72FCB005A916F /* servmain.c */,
+				ADF106D80EC72FCB005A916F /* shutdown.c */,
+				ADF106D90EC72FCB005A916F /* startup.c */,
+				ADF106DA0EC72FCB005A916F /* username.c */,
+			);
+			name = lwsdk;
+			sourceTree = "<group>";
+		};
+		089C166AFE841209C02AAC07 /* GroundControl */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6E770197AFF1A0083273A /* input-output */,
+				ADF106F40EC73281005A916F /* Headers */,
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = GroundControl;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D576317048677EA00EA77CD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D3D1E6821979A7F30013DFCB /* DCGBinaryTree.c */,
+				D3D1E6841979A7FF0013DFCB /* GroundControlLib.c */,
+				D3D1E6781979A7A10013DFCB /* gcMeshload.c */,
+				D3D1E6861979A8060013DFCB /* GroundControlLibInternal.c */,
+				D3D1E6741979A7980013DFCB /* gcImageLoad.c */,
+				D3D1E6751979A7980013DFCB /* gcMain.c */,
+				04E86B830B6122580076C6BF /* lwsdk */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* GroundControl.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF106F40EC73281005A916F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4BA29197AB8AE00CE14E1 /* GroundControlLib.h */,
+				D3A4BA26197AB8A400CE14E1 /* GroundControlLibInternal.h */,
+				D3A4BA27197AB8A400CE14E1 /* GroundControlLibMathHelpers.h */,
+				D3A4BA28197AB8A400CE14E1 /* GroundControlLibMeshHelpers.h */,
+				D30E60851979AD88008CF5C6 /* DCGBinaryTree.h */,
+				ADA3A8940EC7419000B058E2 /* Boolean.h */,
+				ADA3A8950EC7419000B058E2 /* BoundingBox.h */,
+				ADA3A8960EC7419000B058E2 /* EdgeTree.h */,
+				ADA3A8980EC7419000B058E2 /* MathHelper.h */,
+				ADA3A89A0EC7419000B058E2 /* WorkingStructs.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D3A6E770197AFF1A0083273A /* input-output */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6E771197AFF1A0083273A /* Alias.plugin */,
+				D3A6E772197AFF1A0083273A /* Aura_Exporter.plugin */,
+				D3A6E773197AFF1A0083273A /* BMP.plugin */,
+				D3A6E774197AFF1A0083273A /* cadIO.plugin */,
+				D3A6E775197AFF1A0083273A /* CineonFP.plugin */,
+				D3A6E776197AFF1A0083273A /* Conv3D.plugin */,
+				D3A6E777197AFF1A0083273A /* DPX.plugin */,
+				D3A6E778197AFF1A0083273A /* DRLA.plugin */,
+				D3A6E779197AFF1A0083273A /* EPSExport.plugin */,
+				D3A6E77A197AFF1A0083273A /* ExportVRML.plugin */,
+				D3A6E77B197AFF1A0083273A /* GroundControl.plugin */,
+				D3A6E77C197AFF1A0083273A /* IFF.plugin */,
+				D3A6E77D197AFF1A0083273A /* IncObjSave-Mod.lsc */,
+				D3A6E77E197AFF1A0083273A /* IncObjSave.lsc */,
+				D3A6E77F197AFF1A0083273A /* IncSceneSave.lsc */,
+				D3A6E780197AFF1A0083273A /* JPEG.plugin */,
+				D3A6E781197AFF1A0083273A /* LFSFPSConverter.lsc */,
+				D3A6E782197AFF1A0083273A /* LSFPSConverter.lsc */,
+				D3A6E783197AFF1A0083273A /* LWDevice_HID_3Dconnexion.plugin */,
+				D3A6E784197AFF1A0083273A /* LWDevice_HID_MSSideWinderFFWheel.plugin */,
+				D3A6E785197AFF1A0083273A /* LWDevice_HID_PS3.plugin */,
+				D3A6E786197AFF1A0083273A /* LWDeviceManager_HID.plugin */,
+				D3A6E787197AFF1A0083273A /* LWDeviceManager_InterSense.plugin */,
+				D3A6E788197AFF1A0083273A /* LWDeviceManager_MoveMe.plugin */,
+				D3A6E789197AFF1A0083273A /* MDD_Multi-Loader.lsc */,
+				D3A6E78A197AFF1A0083273A /* OpenEXR.plugin */,
+				D3A6E78B197AFF1A0083273A /* PCX.plugin */,
+				D3A6E78C197AFF1A0083273A /* PICT.plugin */,
+				D3A6E78D197AFF1B0083273A /* PNG.plugin */,
+				D3A6E78E197AFF1B0083273A /* PSD.plugin */,
+				D3A6E78F197AFF1B0083273A /* PSDExport.plugin */,
+				D3A6E790197AFF1B0083273A /* QTTools.plugin */,
+				D3A6E791197AFF1B0083273A /* RAD.plugin */,
+				D3A6E792197AFF1B0083273A /* RLA.plugin */,
+				D3A6E793197AFF1B0083273A /* SDTS.plugin */,
+				D3A6E794197AFF1B0083273A /* SGI.plugin */,
+				D3A6E795197AFF1B0083273A /* SGI64.plugin */,
+				D3A6E796197AFF1B0083273A /* SpriteGen.plugin */,
+				D3A6E797197AFF1B0083273A /* SUN.plugin */,
+				D3A6E798197AFF1B0083273A /* TGA.plugin */,
+				D3A6E799197AFF1B0083273A /* TIFF.plugin */,
+				D3A6E79A197AFF1B0083273A /* Valkyrie.plugin */,
+				D3A6E79B197AFF1B0083273A /* VideoTap.plugin */,
+				D3A6E79C197AFF1B0083273A /* VPB.plugin */,
+				D3A6E79D197AFF1B0083273A /* YUV.plugin */,
+			);
+			name = "input-output";
+			path = "../../../../../Applications/NewTek/LightWave3D11.6/support/plugins/input-output";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* GroundControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "GroundControl" */;
+			buildPhases = (
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				ADA3A8A90EC743A500B058E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroundControl;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = GroundControl;
+			productReference = 8D576316048677EA00EA77CD /* GroundControl.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "GroundControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* GroundControl */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* GroundControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF106DC0EC72FCB005A916F /* servmain.c in Sources */,
+				ADF106DD0EC72FCB005A916F /* shutdown.c in Sources */,
+				ADF106DE0EC72FCB005A916F /* startup.c in Sources */,
+				ADF106DF0EC72FCB005A916F /* username.c in Sources */,
+				D3D1E6761979A7980013DFCB /* gcImageLoad.c in Sources */,
+				D3D1E6771979A7980013DFCB /* gcMain.c in Sources */,
+				D3D1E6791979A7A10013DFCB /* gcMeshload.c in Sources */,
+				D3D1E6831979A7F30013DFCB /* DCGBinaryTree.c in Sources */,
+				D3D1E6851979A7FF0013DFCB /* GroundControlLib.c in Sources */,
+				D3D1E6871979A8060013DFCB /* GroundControlLibInternal.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB911B08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					../../Library/GroundControl,
+					../../Lightwave9SDK/Include,
+					../Common,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newtek.lightwave3d.sdk.plugin.${PRODUCT_NAME}";
+				PRODUCT_NAME = GroundControl;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		1DEB911C08733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					../../Library/GroundControl,
+					../../Lightwave9SDK/Include,
+					../Common,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newtek.lightwave3d.sdk.plugin.${PRODUCT_NAME}";
+				PRODUCT_NAME = GroundControl;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB911F08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LITTLE_ENDIAN,
+					_MACOS,
+				);
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		1DEB912008733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LITTLE_ENDIAN,
+					_MACOS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2)",
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "GroundControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911B08733D790010E9CD /* Debug */,
+				1DEB911C08733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "GroundControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911F08733D790010E9CD /* Debug */,
+				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

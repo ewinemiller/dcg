@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		ADA3A8B50EC7447100B058E2 /* AnythingGoos.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D576316048677EA00EA77CD /* AnythingGoos.plugin */; };
+		ADF106D40EC72FAC005A916F /* AnythingGoos.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D30EC72FAC005A916F /* AnythingGoos.c */; };
+		ADF106DC0EC72FCB005A916F /* servmain.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D70EC72FCB005A916F /* servmain.c */; };
+		ADF106DD0EC72FCB005A916F /* shutdown.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D80EC72FCB005A916F /* shutdown.c */; };
+		ADF106DE0EC72FCB005A916F /* startup.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106D90EC72FCB005A916F /* startup.c */; };
+		ADF106DF0EC72FCB005A916F /* username.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106DA0EC72FCB005A916F /* username.c */; };
+		ADF106F00EC73154005A916F /* MathHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = ADF106EF0EC73154005A916F /* MathHelper.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADA3A8A90EC743A500B058E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Applications/NewTek/LightWave3D_2015.3/support/plugins;
+			dstSubfolderSpec = 0;
+			files = (
+				ADA3A8B50EC7447100B058E2 /* AnythingGoos.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		8D576316048677EA00EA77CD /* AnythingGoos.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnythingGoos.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD5F67C3125002A000108EBA /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
+		ADA3A8940EC7419000B058E2 /* Boolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Boolean.h; path = ../Common/Boolean.h; sourceTree = SOURCE_ROOT; };
+		ADA3A8950EC7419000B058E2 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundingBox.h; path = ../Common/BoundingBox.h; sourceTree = SOURCE_ROOT; };
+		ADA3A8960EC7419000B058E2 /* EdgeTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeTree.h; path = ../Common/EdgeTree.h; sourceTree = SOURCE_ROOT; };
+		ADA3A8980EC7419000B058E2 /* MathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MathHelper.h; path = ../Common/MathHelper.h; sourceTree = SOURCE_ROOT; };
+		ADA3A89A0EC7419000B058E2 /* WorkingStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkingStructs.h; path = ../Common/WorkingStructs.h; sourceTree = SOURCE_ROOT; };
+		ADF106D30EC72FAC005A916F /* AnythingGoos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AnythingGoos.c; sourceTree = "<group>"; };
+		ADF106D70EC72FCB005A916F /* servmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = servmain.c; path = ../../Lightwave9SDK/source/servmain.c; sourceTree = SOURCE_ROOT; };
+		ADF106D80EC72FCB005A916F /* shutdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shutdown.c; path = ../../Lightwave9SDK/source/shutdown.c; sourceTree = SOURCE_ROOT; };
+		ADF106D90EC72FCB005A916F /* startup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = startup.c; path = ../../Lightwave9SDK/source/startup.c; sourceTree = SOURCE_ROOT; };
+		ADF106DA0EC72FCB005A916F /* username.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = username.c; path = ../../Lightwave9SDK/source/username.c; sourceTree = SOURCE_ROOT; };
+		ADF106EF0EC73154005A916F /* MathHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = MathHelper.c; path = ../Common/MathHelper.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E86B830B6122580076C6BF /* lwsdk */ = {
+			isa = PBXGroup;
+			children = (
+				ADF106D70EC72FCB005A916F /* servmain.c */,
+				ADF106D80EC72FCB005A916F /* shutdown.c */,
+				ADF106D90EC72FCB005A916F /* startup.c */,
+				ADF106DA0EC72FCB005A916F /* username.c */,
+			);
+			name = lwsdk;
+			sourceTree = "<group>";
+		};
+		089C166AFE841209C02AAC07 /* AnythingGoos */ = {
+			isa = PBXGroup;
+			children = (
+				ADF106F40EC73281005A916F /* Headers */,
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = AnythingGoos;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D576317048677EA00EA77CD /* Info.plist */,
+				AD5F67C3125002A000108EBA /* Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ADF106EF0EC73154005A916F /* MathHelper.c */,
+				ADF106D30EC72FAC005A916F /* AnythingGoos.c */,
+				04E86B830B6122580076C6BF /* lwsdk */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* AnythingGoos.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF106F40EC73281005A916F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				ADA3A8940EC7419000B058E2 /* Boolean.h */,
+				ADA3A8950EC7419000B058E2 /* BoundingBox.h */,
+				ADA3A8960EC7419000B058E2 /* EdgeTree.h */,
+				ADA3A8980EC7419000B058E2 /* MathHelper.h */,
+				ADA3A89A0EC7419000B058E2 /* WorkingStructs.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* AnythingGoos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "AnythingGoos" */;
+			buildPhases = (
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				ADA3A8A90EC743A500B058E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnythingGoos;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = AnythingGoos;
+			productReference = 8D576316048677EA00EA77CD /* AnythingGoos.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "AnythingGoos" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* AnythingGoos */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* AnythingGoos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF106D40EC72FAC005A916F /* AnythingGoos.c in Sources */,
+				ADF106DC0EC72FCB005A916F /* servmain.c in Sources */,
+				ADF106DD0EC72FCB005A916F /* shutdown.c in Sources */,
+				ADF106DE0EC72FCB005A916F /* startup.c in Sources */,
+				ADF106DF0EC72FCB005A916F /* username.c in Sources */,
+				ADF106F00EC73154005A916F /* MathHelper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB911B08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					../Common,
+					../../Lightwave9SDK/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newtek.lightwave3d.sdk.plugin.${PRODUCT_NAME}";
+				PRODUCT_NAME = AnythingGoos;
+				SDKROOT = macosx10.13;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB911C08733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newtek.lightwave3d.sdk.plugin.${PRODUCT_NAME}";
+				PRODUCT_NAME = AnythingGoos;
+				SDKROOT = macosx10.13;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB911F08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = _MACOS;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1 = "\"$(SRCROOT)/../../Lightwave9SDK/include\"";
+				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2 = "\"$(SRCROOT)/../Common\"";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		1DEB912008733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = _MACOS;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_1 = "\"$(SRCROOT)/../../Lightwave9SDK/include\"";
+				HEADER_SEARCH_PATHS_QUOTED_FOR_PROJECT_2 = "\"$(SRCROOT)/../Common\"";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "AnythingGoos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911B08733D790010E9CD /* Debug */,
+				1DEB911C08733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "AnythingGoos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911F08733D790010E9CD /* Debug */,
+				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
