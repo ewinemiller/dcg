@@ -288,10 +288,8 @@ void fillFacetSectionError(const gcMapInfo *mapInfo, const gcPoint *minp1, const
 		{
 			maxEdgeNorth = 0;
 		}
-		else
-		{
-			loopmaxy = floor(maxEdgeNorth);
-		}
+
+		loopmaxy = floor(maxEdgeNorth);
 
 		if (loopminy <= loopmaxy)
 		{
