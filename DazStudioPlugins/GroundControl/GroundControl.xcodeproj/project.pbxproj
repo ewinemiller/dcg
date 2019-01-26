@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D340787A1A535C6E002E958F /* libdzcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D34078791A535C6E002E958F /* libdzcore.dylib */; };
+		D34078851A535CD7002E958F /* GroundControlImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CBE81A53492200C2C550 /* GroundControlImporter.h */; };
+		D34078861A535CD7002E958F /* GroundControlImporterDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CBEA1A53492200C2C550 /* GroundControlImporterDialog.h */; };
+		D340788A1A535CD7002E958F /* DCGBinaryTree.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CBFC1A53494100C2C550 /* DCGBinaryTree.h */; };
+		D340788B1A535CD7002E958F /* GroundControlLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC011A53494100C2C550 /* GroundControlLib.h */; };
+		D340788C1A535CD7002E958F /* GroundControlLibInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC031A53494100C2C550 /* GroundControlLibInternal.h */; };
+		D340788D1A535CD7002E958F /* GroundControlLibMathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC041A53494100C2C550 /* GroundControlLibMathHelpers.h */; };
+		D340788E1A535CD7002E958F /* GroundControlLibMeshHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC051A53494100C2C550 /* GroundControlLibMeshHelpers.h */; };
+		D34078921A535CD7002E958F /* GroundControlImporter_moc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE21A53491100C2C550 /* GroundControlImporter_moc.cpp */; };
+		D34078931A535CD7002E958F /* GroundControlImporterDialog_moc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE31A53491100C2C550 /* GroundControlImporterDialog_moc.cpp */; };
+		D34078941A535CD7002E958F /* GroundControlImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE71A53492200C2C550 /* GroundControlImporter.cpp */; };
+		D34078951A535CD7002E958F /* GroundControlImporterDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE91A53492200C2C550 /* GroundControlImporterDialog.cpp */; };
+		D34078961A535CD7002E958F /* GroundControlMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBEB1A53492200C2C550 /* GroundControlMain.cpp */; };
+		D34078991A535CD7002E958F /* DCGBinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBFB1A53494100C2C550 /* DCGBinaryTree.c */; };
+		D340789A1A535CD7002E958F /* GroundControlLib.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBFF1A53494100C2C550 /* GroundControlLib.c */; };
+		D340789B1A535CD7002E958F /* GroundControlLibInternal.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CC021A53494100C2C550 /* GroundControlLibInternal.c */; };
+		D34078B31A535D98002E958F /* libdzcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D34078B21A535D98002E958F /* libdzcore.dylib */; };
+		D34078BE1A535E12002E958F /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34078BD1A535E12002E958F /* QtGui.framework */; };
+		D34078C11A535E1E002E958F /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34078C01A535E1E002E958F /* QtCore.framework */; };
+		D34078C81A535F1E002E958F /* QtScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34078C71A535F1E002E958F /* QtScript.framework */; };
+		D3C5CBE51A53491100C2C550 /* GroundControlImporter_moc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE21A53491100C2C550 /* GroundControlImporter_moc.cpp */; };
+		D3C5CBE61A53491100C2C550 /* GroundControlImporterDialog_moc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE31A53491100C2C550 /* GroundControlImporterDialog_moc.cpp */; };
+		D3C5CBED1A53492200C2C550 /* GroundControlImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE71A53492200C2C550 /* GroundControlImporter.cpp */; };
+		D3C5CBEE1A53492200C2C550 /* GroundControlImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CBE81A53492200C2C550 /* GroundControlImporter.h */; };
+		D3C5CBEF1A53492200C2C550 /* GroundControlImporterDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBE91A53492200C2C550 /* GroundControlImporterDialog.cpp */; };
+		D3C5CBF01A53492200C2C550 /* GroundControlImporterDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CBEA1A53492200C2C550 /* GroundControlImporterDialog.h */; };
+		D3C5CBF11A53492200C2C550 /* GroundControlMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBEB1A53492200C2C550 /* GroundControlMain.cpp */; };
+		D3C5CC061A53494100C2C550 /* DCGBinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBFB1A53494100C2C550 /* DCGBinaryTree.c */; };
+		D3C5CC071A53494100C2C550 /* DCGBinaryTree.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CBFC1A53494100C2C550 /* DCGBinaryTree.h */; };
+		D3C5CC081A53494100C2C550 /* GroundControlLib.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CBFF1A53494100C2C550 /* GroundControlLib.c */; };
+		D3C5CC091A53494100C2C550 /* GroundControlLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC011A53494100C2C550 /* GroundControlLib.h */; };
+		D3C5CC0A1A53494100C2C550 /* GroundControlLibInternal.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C5CC021A53494100C2C550 /* GroundControlLibInternal.c */; };
+		D3C5CC0B1A53494100C2C550 /* GroundControlLibInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC031A53494100C2C550 /* GroundControlLibInternal.h */; };
+		D3C5CC0C1A53494100C2C550 /* GroundControlLibMathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC041A53494100C2C550 /* GroundControlLibMathHelpers.h */; };
+		D3C5CC0D1A53494100C2C550 /* GroundControlLibMeshHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C5CC051A53494100C2C550 /* GroundControlLibMeshHelpers.h */; };
+		D3C5CC6D1A53508C00C2C550 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C5CC6B1A53508C00C2C550 /* QtCore.framework */; };
+		D3C5CC711A53509800C2C550 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C5CC701A53509800C2C550 /* QtGui.framework */; };
+		D3C5CC7A1A5350B400C2C550 /* QtScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C5CC791A5350B400C2C550 /* QtScript.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		8F3C12860C1DC2C10051A2C3 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*\\.h";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(CURRENT_ARCH)/moc_$(INPUT_FILE_BASE).cpp",
+			);
+			script = "#!/bin/bash\n\n\"$SRCROOT/../../../bin/$DAZ_PLATFORM_NAME/moc\" \"$INPUT_FILE_PATH\" -o \"$DERIVED_FILE_DIR/$CURRENT_ARCH/moc_$INPUT_FILE_BASE.cpp\"\n";
+		};
+		D34078A71A535CD7002E958F /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*\\.h";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(CURRENT_ARCH)/moc_$(INPUT_FILE_BASE).cpp",
+			);
+			script = "#!/bin/bash\n\n\"$SRCROOT/../../../bin/$DAZ_PLATFORM_NAME/moc\" \"$INPUT_FILE_PATH\" -o \"$DERIVED_FILE_DIR/$CURRENT_ARCH/moc_$INPUT_FILE_BASE.cpp\"\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		D2AAC09D05546B4700DB518D /* GroundControl.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = GroundControl.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34078791A535C6E002E958F /* libdzcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdzcore.dylib; path = ../../DAZStudio4.5SDK/lib/Mac32/libdzcore.dylib; sourceTree = SOURCE_ROOT; };
+		D34078AB1A535CD7002E958F /* GroundControl.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = GroundControl.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34078B21A535D98002E958F /* libdzcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdzcore.dylib; path = ../../DAZStudio4.5SDK/lib/Mac64/libdzcore.dylib; sourceTree = SOURCE_ROOT; };
+		D34078BD1A535E12002E958F /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../DAZStudio4.5SDK/lib/Mac64/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		D34078C01A535E1E002E958F /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../DAZStudio4.5SDK/lib/Mac64/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		D34078C71A535F1E002E958F /* QtScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtScript.framework; path = ../../DAZStudio4.5SDK/lib/Mac64/QtScript.framework; sourceTree = SOURCE_ROOT; };
+		D3C5CBE21A53491100C2C550 /* GroundControlImporter_moc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroundControlImporter_moc.cpp; path = moc/GroundControlImporter_moc.cpp; sourceTree = "<group>"; };
+		D3C5CBE31A53491100C2C550 /* GroundControlImporterDialog_moc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroundControlImporterDialog_moc.cpp; path = moc/GroundControlImporterDialog_moc.cpp; sourceTree = "<group>"; };
+		D3C5CBE71A53492200C2C550 /* GroundControlImporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundControlImporter.cpp; sourceTree = "<group>"; };
+		D3C5CBE81A53492200C2C550 /* GroundControlImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundControlImporter.h; sourceTree = "<group>"; };
+		D3C5CBE91A53492200C2C550 /* GroundControlImporterDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundControlImporterDialog.cpp; sourceTree = "<group>"; };
+		D3C5CBEA1A53492200C2C550 /* GroundControlImporterDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundControlImporterDialog.h; sourceTree = "<group>"; };
+		D3C5CBEB1A53492200C2C550 /* GroundControlMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundControlMain.cpp; sourceTree = "<group>"; };
+		D3C5CBFB1A53494100C2C550 /* DCGBinaryTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DCGBinaryTree.c; path = ../../Library/GroundControl/DCGBinaryTree.c; sourceTree = SOURCE_ROOT; };
+		D3C5CBFC1A53494100C2C550 /* DCGBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGBinaryTree.h; path = ../../Library/GroundControl/DCGBinaryTree.h; sourceTree = SOURCE_ROOT; };
+		D3C5CBFF1A53494100C2C550 /* GroundControlLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GroundControlLib.c; path = ../../Library/GroundControl/GroundControlLib.c; sourceTree = SOURCE_ROOT; };
+		D3C5CC001A53494100C2C550 /* GroundControlLib.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GroundControlLib.def; path = ../../Library/GroundControl/GroundControlLib.def; sourceTree = SOURCE_ROOT; };
+		D3C5CC011A53494100C2C550 /* GroundControlLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLib.h; path = ../../Library/GroundControl/GroundControlLib.h; sourceTree = SOURCE_ROOT; };
+		D3C5CC021A53494100C2C550 /* GroundControlLibInternal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GroundControlLibInternal.c; path = ../../Library/GroundControl/GroundControlLibInternal.c; sourceTree = SOURCE_ROOT; };
+		D3C5CC031A53494100C2C550 /* GroundControlLibInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLibInternal.h; path = ../../Library/GroundControl/GroundControlLibInternal.h; sourceTree = SOURCE_ROOT; };
+		D3C5CC041A53494100C2C550 /* GroundControlLibMathHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLibMathHelpers.h; path = ../../Library/GroundControl/GroundControlLibMathHelpers.h; sourceTree = SOURCE_ROOT; };
+		D3C5CC051A53494100C2C550 /* GroundControlLibMeshHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundControlLibMeshHelpers.h; path = ../../Library/GroundControl/GroundControlLibMeshHelpers.h; sourceTree = SOURCE_ROOT; };
+		D3C5CC6B1A53508C00C2C550 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../DAZStudio4.5SDK/lib/Mac32/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		D3C5CC701A53509800C2C550 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../DAZStudio4.5SDK/lib/Mac32/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		D3C5CC791A5350B400C2C550 /* QtScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtScript.framework; path = ../../DAZStudio4.5SDK/lib/Mac32/QtScript.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC09B05546B4700DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C5CC6D1A53508C00C2C550 /* QtCore.framework in Frameworks */,
+				D3C5CC711A53509800C2C550 /* QtGui.framework in Frameworks */,
+				D3C5CC7A1A5350B400C2C550 /* QtScript.framework in Frameworks */,
+				D340787A1A535C6E002E958F /* libdzcore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D340789D1A535CD7002E958F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34078B31A535D98002E958F /* libdzcore.dylib in Frameworks */,
+				D34078BE1A535E12002E958F /* QtGui.framework in Frameworks */,
+				D34078C11A535E1E002E958F /* QtCore.framework in Frameworks */,
+				D34078C81A535F1E002E958F /* QtScript.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC09D05546B4700DB518D /* GroundControl.dylib */,
+				D34078AB1A535CD7002E958F /* GroundControl.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* GroundControl */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ACFE841707C02AAC07 /* Source */,
+				D3C5CBDD1A5348F400C2C550 /* Mocs */,
+				0867D69AFE84028FC02AAC07 /* Mac32 */,
+				D34078AC1A535CF6002E958F /* Mac64 */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = GroundControl;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Mac32 */ = {
+			isa = PBXGroup;
+			children = (
+				D34078791A535C6E002E958F /* libdzcore.dylib */,
+				D3C5CC6B1A53508C00C2C550 /* QtCore.framework */,
+				D3C5CC701A53509800C2C550 /* QtGui.framework */,
+				D3C5CC791A5350B400C2C550 /* QtScript.framework */,
+			);
+			name = Mac32;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D3C5CBFB1A53494100C2C550 /* DCGBinaryTree.c */,
+				D3C5CBFC1A53494100C2C550 /* DCGBinaryTree.h */,
+				D3C5CBFF1A53494100C2C550 /* GroundControlLib.c */,
+				D3C5CC001A53494100C2C550 /* GroundControlLib.def */,
+				D3C5CC011A53494100C2C550 /* GroundControlLib.h */,
+				D3C5CC021A53494100C2C550 /* GroundControlLibInternal.c */,
+				D3C5CC031A53494100C2C550 /* GroundControlLibInternal.h */,
+				D3C5CC041A53494100C2C550 /* GroundControlLibMathHelpers.h */,
+				D3C5CC051A53494100C2C550 /* GroundControlLibMeshHelpers.h */,
+				D3C5CBE71A53492200C2C550 /* GroundControlImporter.cpp */,
+				D3C5CBE81A53492200C2C550 /* GroundControlImporter.h */,
+				D3C5CBE91A53492200C2C550 /* GroundControlImporterDialog.cpp */,
+				D3C5CBEA1A53492200C2C550 /* GroundControlImporterDialog.h */,
+				D3C5CBEB1A53492200C2C550 /* GroundControlMain.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D34078AC1A535CF6002E958F /* Mac64 */ = {
+			isa = PBXGroup;
+			children = (
+				D34078B21A535D98002E958F /* libdzcore.dylib */,
+				D34078C01A535E1E002E958F /* QtCore.framework */,
+				D34078BD1A535E12002E958F /* QtGui.framework */,
+				D34078C71A535F1E002E958F /* QtScript.framework */,
+			);
+			name = Mac64;
+			sourceTree = "<group>";
+		};
+		D3C5CBDD1A5348F400C2C550 /* Mocs */ = {
+			isa = PBXGroup;
+			children = (
+				D3C5CBE21A53491100C2C550 /* GroundControlImporter_moc.cpp */,
+				D3C5CBE31A53491100C2C550 /* GroundControlImporterDialog_moc.cpp */,
+			);
+			name = Mocs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC09905546B4700DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C5CBEE1A53492200C2C550 /* GroundControlImporter.h in Headers */,
+				D3C5CBF01A53492200C2C550 /* GroundControlImporterDialog.h in Headers */,
+				D3C5CC071A53494100C2C550 /* DCGBinaryTree.h in Headers */,
+				D3C5CC091A53494100C2C550 /* GroundControlLib.h in Headers */,
+				D3C5CC0B1A53494100C2C550 /* GroundControlLibInternal.h in Headers */,
+				D3C5CC0C1A53494100C2C550 /* GroundControlLibMathHelpers.h in Headers */,
+				D3C5CC0D1A53494100C2C550 /* GroundControlLibMeshHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34078841A535CD7002E958F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34078851A535CD7002E958F /* GroundControlImporter.h in Headers */,
+				D34078861A535CD7002E958F /* GroundControlImporterDialog.h in Headers */,
+				D340788A1A535CD7002E958F /* DCGBinaryTree.h in Headers */,
+				D340788B1A535CD7002E958F /* GroundControlLib.h in Headers */,
+				D340788C1A535CD7002E958F /* GroundControlLibInternal.h in Headers */,
+				D340788D1A535CD7002E958F /* GroundControlLibMathHelpers.h in Headers */,
+				D340788E1A535CD7002E958F /* GroundControlLibMeshHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC09C05546B4700DB518D /* GroundControl Mac32 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "GroundControl Mac32" */;
+			buildPhases = (
+				D2AAC09905546B4700DB518D /* Headers */,
+				D2AAC09A05546B4700DB518D /* Sources */,
+				D2AAC09B05546B4700DB518D /* Frameworks */,
+				D34078DC1A5360A7002E958F /* Copy to Test */,
+			);
+			buildRules = (
+				8F3C12860C1DC2C10051A2C3 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "GroundControl Mac32";
+			productName = GroundControl;
+			productReference = D2AAC09D05546B4700DB518D /* GroundControl.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D34078831A535CD7002E958F /* GroundControl Mac64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34078A81A535CD7002E958F /* Build configuration list for PBXNativeTarget "GroundControl Mac64" */;
+			buildPhases = (
+				D34078841A535CD7002E958F /* Headers */,
+				D34078901A535CD7002E958F /* Sources */,
+				D340789D1A535CD7002E958F /* Frameworks */,
+				D34078EE1A536247002E958F /* Copy to Test */,
+			);
+			buildRules = (
+				D34078A71A535CD7002E958F /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "GroundControl Mac64";
+			productName = GroundControl;
+			productReference = D34078AB1A535CD7002E958F /* GroundControl.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB916408733D950010E9CD /* Build configuration list for PBXProject "GroundControl" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* GroundControl */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC09C05546B4700DB518D /* GroundControl Mac32 */,
+				D34078831A535CD7002E958F /* GroundControl Mac64 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D34078DC1A5360A7002E958F /* Copy to Test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy to Test";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$BUILT_PRODUCTS_DIR/GroundControl.dylib\" \"$TEST_LOCATION/GroundControl.dylib\"";
+		};
+		D34078EE1A536247002E958F /* Copy to Test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy to Test";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$BUILT_PRODUCTS_DIR/GroundControl.dylib\" \"$TEST_LOCATION/GroundControl.dylib\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC09A05546B4700DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C5CBE51A53491100C2C550 /* GroundControlImporter_moc.cpp in Sources */,
+				D3C5CBE61A53491100C2C550 /* GroundControlImporterDialog_moc.cpp in Sources */,
+				D3C5CBED1A53492200C2C550 /* GroundControlImporter.cpp in Sources */,
+				D3C5CBEF1A53492200C2C550 /* GroundControlImporterDialog.cpp in Sources */,
+				D3C5CBF11A53492200C2C550 /* GroundControlMain.cpp in Sources */,
+				D3C5CC061A53494100C2C550 /* DCGBinaryTree.c in Sources */,
+				D3C5CC081A53494100C2C550 /* GroundControlLib.c in Sources */,
+				D3C5CC0A1A53494100C2C550 /* GroundControlLibInternal.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34078901A535CD7002E958F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34078921A535CD7002E958F /* GroundControlImporter_moc.cpp in Sources */,
+				D34078931A535CD7002E958F /* GroundControlImporterDialog_moc.cpp in Sources */,
+				D34078941A535CD7002E958F /* GroundControlImporter.cpp in Sources */,
+				D34078951A535CD7002E958F /* GroundControlImporterDialog.cpp in Sources */,
+				D34078961A535CD7002E958F /* GroundControlMain.cpp in Sources */,
+				D34078991A535CD7002E958F /* DCGBinaryTree.c in Sources */,
+				D340789A1A535CD7002E958F /* GroundControlLib.c in Sources */,
+				D340789B1A535CD7002E958F /* GroundControlLibInternal.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB916108733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = ../../DAZStudio4.5SDK/include/exportedPluginSymbols.txt;
+				FRAMEWORK_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					QT3_SUPPORT,
+				);
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				PRODUCT_NAME = GroundControl;
+				SDKROOT = macosx10.13;
+				TEST_LOCATION = "/Applications/DAZ 3D/DAZStudio4/plugins";
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB916208733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = ../../DAZStudio4.5SDK/include/exportedPluginSymbols.txt;
+				FRAMEWORK_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					QT3_SUPPORT,
+				);
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				PRODUCT_NAME = GroundControl;
+				SDKROOT = macosx10.13;
+				TEST_LOCATION = "/Applications/DAZ 3D/DAZStudio4/plugins";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB916508733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DAZ_PLATFORM_NAME = Mac32;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../DAZStudio4.5SDK/include;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		1DEB916608733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DAZ_PLATFORM_NAME = Mac32;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../DAZStudio4.5SDK/include;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+		D34078A91A535CD7002E958F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DAZ_PLATFORM_NAME = Mac64;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = ../../DAZStudio4.5SDK/include/exportedPluginSymbols.txt;
+				FRAMEWORK_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					QT3_SUPPORT,
+				);
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				PRODUCT_NAME = GroundControl;
+				SDKROOT = macosx10.13;
+				TEST_LOCATION = "/Applications/DAZ 3D/DAZStudio4 64-bit/plugins";
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D34078AA1A535CD7002E958F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DAZ_PLATFORM_NAME = Mac64;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXPORTED_SYMBOLS_FILE = ../../DAZStudio4.5SDK/include/exportedPluginSymbols.txt;
+				FRAMEWORK_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					QT3_SUPPORT,
+				);
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "../../DazStudio4.5SDK/lib/$(DAZ_PLATFORM_NAME)\"";
+				PRODUCT_NAME = GroundControl;
+				SDKROOT = macosx10.13;
+				TEST_LOCATION = "/Applications/DAZ 3D/DAZStudio4 64-bit/plugins";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "GroundControl Mac32" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916108733D950010E9CD /* Debug */,
+				1DEB916208733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB916408733D950010E9CD /* Build configuration list for PBXProject "GroundControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916508733D950010E9CD /* Debug */,
+				1DEB916608733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34078A81A535CD7002E958F /* Build configuration list for PBXNativeTarget "GroundControl Mac64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34078A91A535CD7002E958F /* Debug */,
+				D34078AA1A535CD7002E958F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
